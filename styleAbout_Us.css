@@ -1,0 +1,129 @@
+body{
+    color :#fff;
+}
+.container-fluid{
+    padding-right:0;
+    padding-left:0;
+    
+}
+h1::after{
+    display:block;
+    height:2px;
+    background-color:rgb(213,216,22);
+    content:" ";
+    width:100px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.nav-item {
+    display: inline;
+}
+.list-menu {
+    display: inline;
+}
+.nav-link{
+    display: inline;
+    color:#fff;
+    font-size: 14px;
+}
+.list-menu-div{
+    padding-top:10px;
+}
+/*-----menu----------*/
+.navbar{
+    width:100%;
+    padding-top:10px;
+    padding-bottom: 15px;
+}
+
+.navbar-brand .logo{
+    width:161px;
+    height:43px;
+}
+
+@media screen and (max-width:996px) {
+    .navbar-brand .logo{
+        width:131px;
+        height:33px;
+    }
+    .nav-login li{
+        margin:0px;
+    }
+   
+}
+@media screen and (max-width:990px) {
+    .nav_search{
+        display: none;
+    }
+    
+
+}
+.header1 li a{
+    color:#fff;
+    font-size: 13px;
+
+}
+.header1 li{
+    margin:10px;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+.container-fluid{
+    position: relative;
+}
+.aboutUs{
+   
+    height: 100vh;
+    box-sizing:content-box;
+}
+
+.background_aboutUs{
+    background-image: url(test3/test3/assets/img/bg/bg-2.jpg);
+    position: absolute;
+    background-position: center;
+    background-size: over;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-attachment: fixed;
+    filter: brightness(80%);
+    z-index: -1;
+}
+.content_aboutUs{
+    padding-top:100px;
+    text-align: center
+}
+.content_aboutUs a{
+    text-align: center;
+}
+/*------------what we do-----------*/
+.whatwedo{
+    position: relative;
+    height:100vh;
+    padding-top:8em;
+    text-align: center;
+    
+}
+.whatwedo p{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.0625rem !important;
+    line-height: 2.0;
+}
+.background_whatwedo{
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(test3/test3/assets/img/bg/bg-4.jpg);
+    position: absolute;
+    background-position: center;
+    background-size: over;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-attachment: fixed;
+    filter: brightness(80%);
+    z-index: -1;
+}
+
