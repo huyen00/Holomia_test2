@@ -15,6 +15,12 @@ h1::after{
     margin: 0 auto;
     margin-top: 40px;
 }
+/*--------Menu -------------*/
+/*---------login --------------*/
+.nav-login .navbar-nav .dropdown .dropdown-menu a{
+    color: #757575;
+    color:black;
+}
 .nav-item {
     display: inline;
 }
@@ -29,7 +35,36 @@ h1::after{
 .list-menu-div{
     padding-top:10px;
 }
+.bg-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding:20px;
+}
+.bg-dark .navbar-nav .nav-link:hover{
+    color: #fff !important;
+   
+}
 /*-----menu----------*/
+.bg-dark .list-menu .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding:20px;
+}
+.bg-dark .list-menu .nav-link:hover{
+    color: #fff !important;
+    
+   
+}
+.dropdown-menu{
+    border-bottom: 2px solid #ffc107;
+    border-radius: 0rem;
+    padding:10px;
+}
+.dropdown-menu a{
+    font-size: 0.8125rem ;
+    color: #757575;
+}
+.dropdown-menu:hover{
+    display:block;
+}
 .navbar{
     width:100%;
     padding-top:10px;
@@ -201,48 +236,72 @@ h1::after{
 }
 
 /*------------------ Our Team---------------------*/
-.OurTeam{
-    background-color: #0F131E
+.ove{
+    margin-top: 40px;
 }
-.OurTeam_item{
-    width:31%;
-
+.over-item{
+    width:30%;
+    padding: 1em 2em;
+    margin-top: 30px;
+    
+    padding:30px;
+   
 }
-.OurTeam_item img{
-   width:50%;
-   height:50%;
-  
+.over-item img{
+    width:150px;
+    height:150px;
+    margin-left:20%;
+   
 }
-.OurTeam_item h5{
-    margin-top:50px;
-    text-align: center;
-}
-.OurTeam_content{
-    margin-top:50px;
-}
-.OurTeam_content p{
-    text-align: center;
-}
-.OurTeam_item h5::after{
+.over-item h5::after{
     display:block;
     height:2px;
     background-color:rgb(213,216,22);
     content:" ";
-    width:50px;
+    width:40px;
     margin: 0 auto;
     margin-top: 40px;
 }
-@media screen and(max-width:776) {
-    .OurTeam_item{
-        width:49%;
-
-    }
-    .OurTeam_item img{
-   width:50%;
-   height:50%;
-        margin-left:50px;
-    }
+.avat{
+    text-align: center;
 }
+.over-item .avat{
+    margin-top: 40px;
+}
+@media screen and (max-width:993px) {
+    .over-item{
+        width:30%;
+        padding: 1em 2em;
+        font-size:80%;
+    }
+
+}
+@media screen and (max-width:826px) {
+    .over-item{
+        width:49%;
+        padding: 1em 2em;
+        font-size:80%;
+    }
+
+}
+@media screen and (max-width:749px) {
+    .over-item{
+        width:98%;
+        padding: 1em 2em;
+        font-size:100%;
+    }
+    .over-item img{
+        width:150px;
+        height:150px;
+        margin-left:30%;
+       
+    }
+
+}
+.OurTeam{
+    background-color: #0F131E
+}
+
 /*------------------Image------------------*/
 .image{
     background-color: #0F131E;
@@ -264,6 +323,29 @@ h1::after{
     padding:0;
     right:0;
     left:0;
+}
+@media screen and (max-width:1204px) {
+    .img_top{
+        width:24%;
+    }
+}
+@media screen and (max-width:749px) {
+    .img_top{
+        width:98%;
+        
+    }
+    .img_bottom{
+        width:98%;
+        margin-top:8px;
+        padding-bottom: 8px;
+    }
+}
+@media screen and (max-width:988px) {
+    .img_top{
+        width:49%;
+        
+    }
+   
 }
 /*----------------Our Values ----------------*/
 .OurValues{
@@ -327,3 +409,30 @@ li{
     margin-top:30px;
     padding-bottom:30px;
 }
+@media screen and (max-width:991px){
+    .col-md-3{
+        width:49%;
+    }
+    .col-md-2{
+       
+    }
+}
+@media (min-width: 768px){
+    .col-md-3 {
+        -ms-flex: 0 49%;
+        flex: 0 0 49%;
+        max-width: 49%;
+    }
+    .icon {
+        margin-top:20px;
+    }
+    .col-md-2 {
+        -ms-flex: 0 0 49%;
+        flex: 0 0 49%;
+        max-width: 49%;
+        padding-left:20px;
+    }
+}
+
+/*------------------*/
+
