@@ -8,7 +8,8 @@
     <link rel ="stylesheet" type="text/css" href="test3/data/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styleAbout_Us.css" type="text/css">
+    <link rel="stylesheet" href="style_main/singupAbout.css" type="text/css">
+    <link rel="stylesheet" href="js/singupabout.js" type="text/css">
 </head>
   <body>
     <nav class="navbar navbar-expand-md bg-dark">
@@ -100,7 +101,7 @@
         </div>   
     </nav>
     <div class="container-fluid">
-        <div class="slide">
+      <div class="slide">
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -108,8 +109,8 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
               </ol>
               <div class="carousel-inner">
-                <div class="carousel-item active"style="background-image: url(test3/test3/assets/img/content/carousel/slide_01.jpg);height:70vh">
-                  <div class="row col-md-5  slide_caption">
+                <div class="carousel-item active"style="background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(test3/test3/assets/img/content/carousel/slide_01.jpg);height:80vh">
+                  <div class="row col-md-5 slide_caption">
                     <div class="row slide_01">
                       <h5>God's eye</h5>
                       <p>Class aptent taciti sociosqu ad litora torquent per conubia,
@@ -117,40 +118,40 @@
                           Quisque gravida eu lacus et consequat. 
                           Interdum et malesuada</p>
                       <div class="Buy">
-                          <a href="#">349$ <p style="color:yellow">249$</p> </a>
-                          <a href="#">BUY</a>
+                          <a href="#" style="background-color: rgba(0, 0, 0, 0.5) !important; padding:20px;text-decoration: none;">349$ <p style="color:yellow">249$</p> </a>
+                          <a href="#"style="background-color: #ffff; padding:20px 30px">BUY</a>
                       </div>
                     </div>
                    
                   </div>
                 </div>
-                <div class="carousel-item "style="background-image: url(test3/test3/assets/img/content/carousel/slide_02.jpg);height:70vh">
+                <div class="carousel-item "style="background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(test3/test3/assets/img/content/carousel/slide_02.jpg);height:80vh">
                   <div class="row col-md-5  slide_caption">
-                    <div class="row text">
+                    <div class="row slide_01">
                       <h5>Cybercity 2056</h5>
                       <p>Class aptent taciti sociosqu ad litora torquent
                         <br>per conubia, per inceptos himenaeos. <br>
                           Quisque gravida eu lacus et consequat. 
                           Interdum et malesuada.</p>
                       <div class="Buy">
-                          <a href="#">349$ <p style="color:yellow">249$</p> </a>
-                          <a href="#">BUY</a>
+                          <a href="#"style="background-color: rgba(0, 0, 0, 0.5) !important; padding:20px;text-decoration: none;">349$ <p style="color:yellow">249$</p> </a>
+                          <a href="#"style="background-color: #ffff; padding:20px 30px">BUY</a>
                       </div>
                     </div>
                    
                   </div>
                 </div>
-                <div class="carousel-item "style="background-image: url(test3/test3/assets/img/content/carousel/slide_03.jpg);height:70vh">
-                  <div class="row col-md-9 mx-auto caption">
-                    <div class="row text ">
+                <div class="carousel-item "style="background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(test3/test3/assets/img/content/carousel/slide_03.jpg);height:80vh">
+                  <div class="row col-md-5 slide_caption" style="display: block;">
+                    <div class="row slide_01 "style="display: block;">
                       <h5>The darkness within me</h5>
-                      <p>Class aptent taciti sociosqu ad litora torquent <br> per conubia,
+                      <p><br>Class aptent taciti sociosqu ad litora torquent <br> per conubia,
                         per inceptos himenaeos.
                          <br>Quisque gravida eu lacus et consequat.
                         <br>Interdum et malesuada</p>
-                      <div class="Buy">
-                        <a href="#">349$ <p style="color:yellow">249$</p> </a>
-                        <a href="#">BUY</a>
+                      <div class="Buy" style="margin-top:20px">
+                        <a href="#" style="background-color: rgba(0, 0, 0, 0.5) !important; padding:20px;text-decoration: none;">349$ <p style="color:yellow;margin-left:10px">249$</p> </a>
+                        <a href="#" style="background-color: #ffff; padding:20px 30px">BUY</a>
                       </div>
                     </div>
                     
@@ -167,6 +168,311 @@
               </a>
             </div>
         </div>
+        <!--most popular--->
+        <div class="most_popular">
+          <div class="container popular">
+            <div class="title_polular">
+              <h4>Most popular products</h4>
+              <div class="row title-item">
+                <h6 class="item_popu">NEW</h6>
+                <h6 class="item_popu">HIGHLIGHTS</h6>
+                <h6 class="item_popu">COMING SOON</h6>
+              </div>
+            </div>
+            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="12000">
+              <div class="carousel-inner row w-100 mx-auto flex-nowrap" role="listbox">
+                <div class="carousel-item col-md-3 active">
+                  <div class=" row img">
+                    <img src="test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
+                  </div>
+                  <div class="row content-img">
+                    <h4>CREATURE 2020</h4>
+                    <div class="clearfix">
+                      <a href="#" class="float-left">E24.99</a>
+                      <h6 class="float-right">ACTION,ADVENTURE</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-md-3">
+                  <div class=" row img">
+                    <img src="test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
+                  </div>
+                  <div class="row content-img">
+                    <h4>CREATURE 2020</h4>
+                    <div class="clearfix">
+                      <a href="#" class="float-left">E24.99</a>
+                      <h6 class="float-right">ACTION,ADVENTURE</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-md-3">
+                  <div class=" row img">
+                    <img src="test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
+                  </div>
+                  <div class="row content-img">
+                    <h4>CREATURE 2020</h4>
+                    <div class="clearfix">
+                      <a href="#" class="float-left">E24.99</a>
+                      <h6 class="float-right">ACTION,ADVENTURE</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-md-3">
+                  <div class=" row img">
+                    <img src="test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
+                  </div>
+                  <div class="row content-img">
+                    <h4>CREATURE 2020</h4>
+                    <div class="clearfix">
+                      <a href="#" class="float-left">E24.99</a>
+                      <h6 class="float-right">ACTION,ADVENTURE</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-md-3">
+                  <div class=" row img">
+                    <img src="test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
+                  </div>
+                  <div class="row content-img">
+                    <h4>CREATURE 2020</h4>
+                    <div class="clearfix">
+                      <a href="#" class="float-left">E24.99</a>
+                      <h6 class="float-right">ACTION,ADVENTURE</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-md-3">
+                  <div class=" row img">
+                    <img src="test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
+                  </div>
+                  <div class="row content-img">
+                    <h4>CREATURE 2020</h4>
+                    <div class="clearfix">
+                      <a href="#" class="float-left">E24.99</a>
+                      <h6 class="float-right">ACTION,ADVENTURE</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-md-3">
+                  <div class=" row img">
+                    <img src="test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
+                  </div>
+                  <div class="row content-img">
+                    <h4>CREATURE 2020</h4>
+                    <div class="clearfix">
+                      <a href="#" class="float-left">E24.99</a>
+                      <h6 class="float-right">ACTION,ADVENTURE</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-md-3">
+                  <div class=" row img">
+                    <img src="test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
+                  </div>
+                  <div class="row content-img">
+                    <h4>CREATURE 2020</h4>
+                    <div class="clearfix">
+                      <a href="#" class="float-left">E24.99</a>
+                      <h6 class="float-right">ACTION,ADVENTURE</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                  <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                  <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                  <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="row" style="widrh:100%;height:100px"></div>
+        </div>
+       
+    </div>
+    <!----------------------    lastest news---------------           -->
+    <div class="container-fluid" style="background-color: #0F131E;">
+      <div class="container Latest ">
+        <div class=" row Latest-News">
+          <div class="row title-lastest">
+            <h2>Latest News</h2>
+          </div>
+          <div class="row col-md-12 col-lg-12 latest-item">
+            <div class="col-sm-12 col-md-4 col-lg-5 img-latest">
+              <img class="rounded" src="test3/test3/assets/img/content/img_01.jpg" alt="">
+            </div>
+            <div class=" col-sm-12 col-md-8 col-lg-7 content-latest">
+              <div class="row ">
+                <h4>MAGNIS DEVELOPERS SPEAK OUT ON 'DEATH MARCH'</h4>
+              </div>
+              <div class="row ">
+                <span class="tags">
+                  <i class="fas fa-tags"></i>
+                  Cras quis lacus dolor, Quisque dictum sollicitudin 
+                  <span class="mx-1">-</span><span>4th October 2021</span>
+                </span>
+              </div>
+              <div class="row">
+                <p>
+                  Donec vestibulum, odio a sagittis vestibulum, eros nunc consectetur ex, eu tincidunt neque lacus ac lorem. 
+                  Mauris interdum urna id eros dignissim convallis.
+                   Aliquam convallis, nisi in facilisis tincidunt, augue nunc efficitur lectus, ut auctor orci purus sed neque.
+                   Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+                <a href="#" class="btn btn-outline-light read-more">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="row col-md-12 col-lg-12 latest-item">
+            <div class="col-sm-12 col-md-4 col-lg-5 img-latest">
+              <img class="rounded" src="test3/test3/assets/img/content/img_01.jpg" alt="">
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-7 content-latest">
+              <div class="row ">
+                <h4>MAGNIS DEVELOPERS SPEAK OUT ON 'DEATH MARCH'</h4>
+              </div>
+              <div class="row ">
+                <span class="tags">
+                  <i class="fas fa-tags"></i>
+                  Cras quis lacus dolor, Quisque dictum sollicitudin 
+                  <span class="mx-1">-</span><span>4th October 2021</span>
+                </span>
+              </div>
+              <div class="row">
+                <p>
+                  Donec vestibulum, odio a sagittis vestibulum, eros nunc consectetur ex, eu tincidunt neque lacus ac lorem. 
+                  Mauris interdum urna id eros dignissim convallis.
+                   Aliquam convallis, nisi in facilisis tincidunt, augue nunc efficitur lectus, ut auctor orci purus sed neque.
+                   Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+                <a href="#" class="btn btn-outline-light read-more">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="row col-md-12 col-lg-12 latest-item">
+            <div class=" col-sm-12 col-md-4 col-lg-5 img-latest">
+              <img class="rounded" src="test3/test3/assets/img/content/img_01.jpg" alt="">
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-7 content-latest">
+              <div class="row ">
+                <h4>MAGNIS DEVELOPERS SPEAK OUT ON 'DEATH MARCH'</h4>
+              </div>
+              <div class="row ">
+                <span class="tags">
+                  <i class="fas fa-tags"></i>
+                  Cras quis lacus dolor, Quisque dictum sollicitudin 
+                  <span class="mx-1">-</span><span>4th October 2021</span>
+                </span>
+              </div>
+              <div class="row">
+                <p>
+                  Donec vestibulum, odio a sagittis vestibulum, eros nunc consectetur ex, eu tincidunt neque lacus ac lorem. 
+                  Mauris interdum urna id eros dignissim convallis.
+                   Aliquam convallis, nisi in facilisis tincidunt, augue nunc efficitur lectus, ut auctor orci purus sed neque.
+                   Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+                <a href="#" class="btn btn-outline-light read-more">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row banner">
+          <img src="test3/test3/assets/img/content/banner_01.jpg" alt="">
+        </div>
+      </div>
+      <div class="row" style="width:100%;height:100px"></div>
+    </div>
+    
+    <div class="footer">
+      <div class="container" style="padding-top:50px">
+          <div class="row">
+              <div class="col-md-6 col-sm-6 col-lg-3">
+                  <div class="footer_logo">
+                      <img src="test3/test3/assets/img/logo-gaming.png" style="width:161px;height:43px" alt="">
+                  </div>
+                  <div class="logo_content">
+                      <p>Wicodus is a online store where you can find digital goods at the best prices.</p>
+                  </div>
+                  <div class="row icon">
+                      
+                      <a href="#" class="item">
+                          <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="item">
+                          <i class="fab fa-xbox"></i>
+                      </a>
+                      <a href="#" class="item">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-2">
+                  <div class="footer_tile">
+                      <h6>ABOUT</h6>
+                  </div>
+                  <div class="tile">
+                      <ul style="left:0;padding-inline-start: 0;">
+                          <li><p>Our team</p></li>
+                          <li><p>Careers </p></li>
+                          <li><p>Cookie Policy</p></li>
+                          <li><p>Privacy Policy</p></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm 6 col-lg-2">
+                  <div class="footer_tile">
+                      <h6>COMMUNITY</h6>
+                  </div>
+                  <div class="tile">
+                      <ul style="left:0;padding-inline-start: 0;">
+                          <li><p>Forum</p></li>
+                          <li><p>Blog</p></li>
+                          <li><p>News</p></li>
+                          <li><p>Team</p></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-2" style="padding:10px">
+                  <div class="footer_tile mx-auto">
+                      <h6 >HELP</h6>
+                  </div>
+                  <div class="tile">
+                      <ul style="left:0;padding-inline-start: 0;">
+                          <li><p>Contact Us</p></li>
+                          <li><p>Support</p></li>
+                          <li><p>Terms & conditions</p></li>
+                          <li><p>Refund policy</p></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-3">
+                  <div class="footer_tile mx-auto">
+                      <h6>WAYS TO PAY</h6>
+                  </div>
+                  <div class="tile">
+                      <a href="#"><i class="fab fa-cc-paypal" style="color: #f8f9fa !important; padding-right:10px;font-size:30px"></i></a>
+                      <a href="#"><i class="fab fa-cc-visa"style="color:  #f8f9fa !important; padding-right:10px;font-size:30px"></i></a>
+                      <a href="#"><i class="fab fa-cc-amazon-pay"style="color:  #f8f9fa !important; padding-right:10px;font-size:30px"></i></a>
+                      <a href="#"><i class="fab fa-cc-stripe"style="color:  #f8f9fa !important; padding-right:10px;font-size:30px"></i></a>
+                      <a href="#"><i class="fab fa-cc-jcb"style="color:  #f8f9fa !important; padding-right:10px;font-size:30px"></i></a>
+                  </div>
+                  <div>
+                      <h6>Reviews</h6>
+                      <div class="text-waring" style="margin-top:30px;">
+                          <i class="fas fa-star" style="color:yellow"></i>
+                          <i class="fas fa-star"style="color:yellow"></i>
+                          <i class="fas fa-star"style="color:yellow"></i>
+                          <i class="fas fa-star"style="color:yellow"></i>
+                          <i class="fas fa-star text-secondary"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+      <div class="row" style="width:100%; height:60px"></div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
