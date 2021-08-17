@@ -263,6 +263,41 @@ h1::after{
 .form-group{
     background-color: #0F131E;
 }
+.form-control{
+    background-color: transparent;
+}
+.map{
+    background: linear-gradient(to bottom, rgba(17, 25, 49, 0.8) 30%, rgba(15, 19, 30, 0.8) 50%);
+}
+@media screen and (max-width:1130px){
+    .map{
+        margin-top:20px;
+      
+    }
+   
+}
+@media screen and (max-width:990px){
+    .form_contact{
+        width:98%;
+    }
+    .map{
+        margin-top:20px;
+      
+    }
+   
+}
+.fa-facebook{
+    color:#ffff;
+}
+.fa-twitter{
+    color:#ffff;
+}
+.fa-xbox{
+    color:#ffff;
+}
+.fa-instagram{
+     color:#ffff;
+}
 .main7{
     width: 100%;
     height:30vh;
