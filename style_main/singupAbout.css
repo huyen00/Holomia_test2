@@ -128,7 +128,7 @@ h1::after{
 .most_popular{
     background-color: #0F131E;
 }
-.carousel-inner .carousel-item.active,
+/* .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
   display: flex;
@@ -148,7 +148,9 @@ h1::after{
 .carousel-inner .carousel-item-left{ 
   transform: translateX(0);
   
-}
+} */
+
+
 /*---------------- gutter ----------------------*/
 /*  */
 .col-md-6{
@@ -175,7 +177,7 @@ h1::after{
 }
 .gutter1 img{
     width:100%;
-    height:80vh;
+    height:100vh;
     padding-right:0 !important;
     padding-left:0 !important;
 }
@@ -194,7 +196,7 @@ h1::after{
 .gutter2-right-content .text{
     font-size: 40px;
 }
-.right{
+.right1{
     position: absolute;
     top:90px;
 }

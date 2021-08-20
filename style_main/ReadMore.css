@@ -1,0 +1,239 @@
+body{
+    color :#fff;
+}
+.container-fluid{
+    padding-right:0;
+    padding-left:0;
+    background-color: #0F131E;
+    
+}
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+h1::after{
+    display:block;
+    height:2px;
+    background-color:rgb(213,216,22);
+    content:" ";
+    width:100px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+/*--------Menu -------------*/
+/*---------login --------------*/
+.nav-login .navbar-nav .dropdown .dropdown-menu a{
+    color: #757575;
+    color:black;
+}
+.nav-item {
+    display: inline;
+}
+.list-menu {
+    display: inline;
+}
+.nav-link{
+    display: inline;
+    color:#fff;
+    font-size: 14px;
+}
+.list-menu-div{
+    padding-top:10px;
+}
+.bg-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding:20px;
+}
+.bg-dark .navbar-nav .nav-link:hover{
+    color: #fff !important;
+   
+}
+/*-----menu----------*/
+.bg-dark .list-menu .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding:20px;
+}
+.bg-dark .list-menu .nav-link:hover{
+    color: #fff !important;
+    
+   
+}
+.dropdown-menu{
+    border-bottom: 2px solid #ffc107;
+    border-radius: 0rem;
+    padding:10px;
+}
+.dropdown-menu a{
+    font-size: 0.8125rem ;
+    color: #757575;
+}
+.dropdown-menu:hover{
+    display:block;
+}
+.navbar{
+    width:100%;
+    padding-top:10px;
+    padding-bottom: 15px;
+}
+
+.navbar-brand .logo{
+    width:161px;
+    height:43px;
+}
+
+@media screen and (max-width:996px) {
+    .navbar-brand .logo{
+        width:131px;
+        height:33px;
+    }
+    .nav-login li{
+        margin:0px;
+    }
+   
+}
+@media screen and (max-width:990px) {
+    .nav_search{
+        display: none;
+    }
+    
+
+}
+.header1 li a{
+    color:#fff;
+    font-size: 13px;
+
+}
+.header1 li{
+    margin:10px;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+/*----------------------------------news list------------*/
+.breadcrumb a{
+    text-decoration: none;
+}
+.news-list::after{
+    content:"";
+    display: block;
+    border-bottom: 2px solid #3a4048 !important;
+    padding-bottom: 1rem !important;
+}
+.text-gray{
+    color: #adb5bd !important;
+    font-size: 0.9375rem !important;
+}
+.text-gray span{
+    font-size: 0.8125rem !important;
+}
+.text-gray a{
+    text-decoration: none;
+}
+.text-gray h5 a:hover{
+    color:blue !important;
+}
+.text-gray .mb-2 a{
+    font-size: 0.8125rem !important;
+    text-decoration: none;
+}
+.badges-left{
+    position: absolute;
+}
+@media screen and( max-width:567px){
+    .col-sm-12 h5{
+        margin-top:10px;
+    }
+}
+.new{
+    position: absolute;
+    top:0;
+    margin-top:4px;
+    padding:3px;
+    border-radius: 3px;
+}
+.new a{
+    text-decoration: none;
+    padding:3px;
+    border-radius:4px;
+}
+/*---------------------filters------------*/
+
+.filters{
+    border:1px solid #3a4048;
+    border-radius:5px;
+    /* border-color: #3a4048 !important; */
+}
+.filter-item{
+    border-radius: 4px;
+}
+.filter-item a{
+    text-decoration: none;
+}
+.filter-item :hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+.achive{
+    border:1px solid #3a4048;
+    display: block;
+    border-radius:5px;
+}
+.achive-item a{
+    text-decoration: none;
+}
+.achive-item a:hover{
+    color:blue !important;
+}
+.page-item a{
+    background-color: #0F131E;
+    border-color:#3a4048;
+}
+.page-item a:hover{
+    background-color: #0F131E !important;
+    color: blue !important;
+    border-color:#3a4048;
+}
+
+/*-------------------------  footer  -----------------------*/
+.footer{
+    background-color: #1a1a1a !important;
+    color: #f8f9fa !important;
+}
+li{
+    list-style-type: none !important;
+}
+.logo_content{
+    margin-top:30px
+}
+.icon{
+    display: inline;
+}
+.icon .item{
+  padding-right:20px;
+  color: #f8f9fa !important;
+}
+.tile{
+    margin-top:30px;
+    padding-bottom:30px;
+}
+@media screen and (max-width:991px){
+    .col-md-3{
+        width:49%;
+    }
+}
+@media (min-width: 768px){
+    .col-md-3 {
+        -ms-flex: 0 49%;
+        flex: 0 0 49%;
+        max-width: 49%;
+    }
+    .icon {
+        margin-top:20px;
+    }
+    .col-md-2 {
+        -ms-flex: 0 0 49%;
+        flex: 0 0 49%;
+        max-width: 49%;
+        padding-left:20px;
+    }
+}
