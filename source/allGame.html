@@ -199,9 +199,9 @@
                 <header class="header">
                     <h2>Most popular products</h2>
                 </header>
-                <div class="main-popular position-relative">
-                    <div class="row d-inline">
-                        <div class="col-md-8 col-lg-8">
+                <div class="main-popular position-relative mt-5">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-8 col-sm-12 left">
                             <div class="row">
                                 <ul class="nav nav-pills">
                                     <li class="nav-item pr-2">
@@ -1574,42 +1574,43 @@
                                  <div class="tab-pane container fade" id="tab3"> </p>Thử thay đổi gì đó khi chuyển tab.</p></div> 
                            </div>
                            <div class="row col-lg-12 col-md-12 mt-5">
-                            <nav class="navbar pt-4 pr-0 mr-0 justify-content-end border-top border-secondary" >
-                                <ul class="page-nav "style="display:flex ">
-                                    <li class="page-item p-1">
-                                        <a href="../source/ReadMore.html" class="page-link">
-                                            <i class="fas fa-angle-left"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item p-1">
-                                        <a  href="../source/ReadMore.html" class="page-link">1</a>
-                                    </li>
-                                    <li class="page-item-two active p-1">
-                                        <a  href="../source/ReadMore.html" class="page-link bg-warning border-warning text-white">2</a>
-                                    </li>
-                                    <li class="page-item p-1">
-                                        <a  href="../source/ReadMore.html" class="page-link">3</a>
-                                    </li>
-                                    <li class="page-item p-1">
-                                        <a  href="../source/ReadMore.html" class="page-link">
-                                            <i class="fas fa-angle-right"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                                <nav class="navbar pt-4 pr-0 mr-0 justify-content-end border-top border-secondary" >
+                                    <ul class="page-nav "style="display:flex ">
+                                        <li class="page-item p-1">
+                                            <a href="../source/ReadMore.html" class="page-link">
+                                                <i class="fas fa-angle-left"></i>
+                                            </a>
+                                        </li>
+                                        <li class="page-item p-1">
+                                            <a  href="../source/ReadMore.html" class="page-link">1</a>
+                                        </li>
+                                        <li class="page-item-two active p-1">
+                                            <a  href="../source/ReadMore.html" class="page-link bg-warning border-warning text-white">2</a>
+                                        </li>
+                                        <li class="page-item p-1">
+                                            <a  href="../source/ReadMore.html" class="page-link">3</a>
+                                        </li>
+                                        <li class="page-item p-1">
+                                            <a  href="../source/ReadMore.html" class="page-link">
+                                                <i class="fas fa-angle-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>   
-                        <div class="col-md-4 col-lg-4">
-                            <div class="filter border border-secondary rounded p-4">
-                                <ul class="sidebar-nav-light-hover list-unstyled mb-0 fw-600 small-3">
-                                    <li class="nav-item text-light mb-2  transition active">
-                                        <a href aria-expanded="false" data-toggle="collapse" class="nav-link py-2 px-3 text-uppercase collapsed collapser nav-link-border collapse-active">
-                                            <span class="text-uppercase">platform</span>
-                                            <i class="fas fa-chevron-down"></i>
+                        <div class="col-md-4 col-lg-4 col-sm-12 right">
+                            <div class=" row filter border border-secondary rounded p-4">
+                                <ul class="sidebar-nav-light-hover list-unstyled mb-0 fw-600 small-3 w-100" >
+                                    <li class="nav-item text-light transition active bg-secondary active"style="display: block;border-radius:4px">
+                                        <a href="#hidden" aria-expanded="false" data-toggle="collapse" class="nav-link   text-uppercase collapsed collapser nav-link-border ">
+                                            <span class="text-uppercase bg-transparent title-item "style="background-color: #0F131E;">platform</span>
+                                            <i class="fas fa-chevron-down float-right  pr-2 pt-1 "></i>
                                         </a>
-                                        <div class="nav-collapse collapse ">
-                                            <ul class="list-unstyled py-2">
+                                        <div class="nav-collapse collapse border border-secondary collapse-active" id="hidden">
+                                            <ul class="list-unstyled ">
                                                 <li class="nav-item">
-                                                    <div class="nav-link py-1 px-3">
+                                                    <div class="nav-link px-3">
                                                         <form>
                                                             <div class="custom-control">
                                                                 <input type="checkbox" class="custom-control-checkbox" id="check1">
@@ -1631,7 +1632,320 @@
                                             </ul>
                                         </div>
                                     </li>
+                                    <li class="nav-item text-light mt-3  transition  "style="display: block;">
+                                        <a href="#genre" aria-expanded="false" data-toggle="collapse" class="nav-link text-uppercase collapsed collapser nav-link-border  ">
+                                            <span class="text-uppercase bg-transparent title-item"style="background-color: #0F131E;">genre</span>
+                                            <i class="fas fa-chevron-down float-right  pr-2 pt-1"></i>
+                                        </a>
+                                        <div class="nav-collapse collapse border border-secondary " id="genre">
+                                            <ul class="list-unstyled " >
+                                                <li class="nav-item">
+                                                    <div class="nav-link px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre1">
+                                                                <label for="checkgenre1">Action</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre2">
+                                                                <label for="checkgenre2">Adventure</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre3">
+                                                                <label for="checkgenre3">Casual</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre4">
+                                                                <label for="checkgenre4">Early Access</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre5">
+                                                                <label for="checkgenre5">Free to Play</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre6">
+                                                                <label for="checkgenre6">Indie</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre7">
+                                                                <label for="checkgenre7">Massively Multiplayer</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre8">
+                                                                <label for="checkgenre8">Racing</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre9">
+                                                                <label for="checkgenre9">RPG</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre10">
+                                                                <label for="checkgenre10">Simulation</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre11">
+                                                                <label for="checkgenre11">Sports</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkgenre12">
+                                                                <label for="checkgenre12">Strategy</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item text-light mt-3  transition "style="display: block;">
+                                        <a href="#software" aria-expanded="false" data-toggle="collapse" class="nav-link  text-uppercase collapsed collapser nav-link-border ">
+                                            <span class="text-uppercase bg-transparent title-item"style="background-color: #0F131E;">software</span>
+                                            <i class="fas fa-chevron-down float-right  pr-2 pt-1"></i>
+                                        </a>
+                                        <div class="nav-collapse collapse border border-secondary " id="software">
+                                            <ul class="list-unstyled " >
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksw1">
+                                                                <label for="checksw1">Animation & Modeling</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksw2">
+                                                                <label for="checksw2">Audio Production</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksw3">
+                                                                <label for="checksw3">Design</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksw4">
+                                                                <label for="checksw4">Education</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksw5">
+                                                                <label for="checksw5">Game Development</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksw6">
+                                                                <label for="checksw6">Photo editing</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksw7">
+                                                                <label for="checksw7">Utilities</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksw8">
+                                                                <label for="checksw8">Video Production</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksw9">
+                                                                <label for="checksw9">Web Publishing</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item text-light mt-3  transition "style="display: block;">
+                                        <a href="#sp" aria-expanded="false" data-toggle="collapse" class="nav-link text-uppercase collapsed collapser nav-link-border ">
+                                            <span class="text-uppercase bg-transparent title-item"style="background-color: #0F131E;">supported vr</span>
+                                            <i class="fas fa-chevron-down float-right  pr-2 pt-1 "></i>
+                                        </a>
+                                        <div class="nav-collapse collapse border border-secondary " id="sp">
+                                            <ul class="list-unstyled " >
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksp1">
+                                                                <label for="checksp1">PlayStation VR</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksp2">
+                                                                <label for="checksp2">Oculus Rift</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checksp3">
+                                                                <label for="checksp3">HTC Vive</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item text-light mt-3   transition "style="display: block;">
+                                        <a href="#rs" aria-expanded="false" data-toggle="collapse" class="nav-link  text-uppercase collapsed collapser nav-link-border collapser-active ">
+                                            <span class="text-uppercase bg-transparent title-item"style="background-color: #0F131E;">supported vr</span>
+                                            <i class="fas fa-chevron-down float-right pr-2 pt-1"></i>
+                                        </a>
+                                        <div class="nav-collapse collapse border border-secondary " id="rs">
+                                            <ul class="list-unstyled " >
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox"style="background-color: #0F131E !important; " id="checkrs1">
+                                                                <label for="checkrs1">Released</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                                <input type="checkbox" class="custom-control-checkbox" id="checkrs2">
+                                                                <label for="checkrs2">Pre-Purchase</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <div class="nav-link py-1 px-3">
+                                                        <form>
+                                                            <div class="custom-control">
+                                                               <p class="check"><input type="checkbox" class="custom-control-checkbox" id="checkrs3"></p> 
+                                                                <label for="checkrs3">Coming Soon</label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>
+                                <div class="mx-auto w-100 bg-warning mt-3  "style="text-align: center;border-radius:4px !important;border-color: #ffc107!important; ;" >
+                                    <a href="../source/allGame.html" class="mx-auto btn btn-warning  text-white w-100  p-1" style="text-align: center;border-radius:4px !important;border-color: #ffc107!important;">Reset filter</a>
+                                </div>
                             </div>
                         </div>  
                         </div>
