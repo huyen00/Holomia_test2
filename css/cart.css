@@ -1,0 +1,116 @@
+body{
+    color :#fff !important;
+}
+.container-fluid{
+    padding-right:0;
+    padding-left:0;
+    background-color: #0F131E;
+}
+h1::after{
+    display:block;
+    height:2px;
+    background-color:rgb(213,216,22);
+    content:" ";
+    width:100px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+/*--------Menu -------------*/
+/*---------login --------------*/
+.nav-login .navbar-nav .dropdown .dropdown-menu a{
+    color: #757575;
+    color:black;
+}
+.nav-item {
+    display: inline;
+}
+.list-menu {
+    display: inline;
+}
+.nav-link{
+    display: inline;
+    color:#fff;
+    font-size: 14px;
+}
+.list-menu-div{
+    padding-top:10px;
+}
+.bg-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding:20px;
+}
+.bg-dark .navbar-nav .nav-link:hover{
+    color: #fff !important;
+   
+}
+/*-----menu----------*/
+.bg-dark .list-menu .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding:20px;
+}
+.bg-dark .list-menu .nav-link:hover{
+    color: #fff !important;
+    
+   
+}
+.dropdown-menu{
+    border-bottom: 2px solid #ffc107;
+    border-radius: 0rem;
+    padding:10px;
+}
+.dropdown-menu a{
+    font-size: 0.8125rem ;
+    color: #757575;
+}
+.dropdown-menu:hover{
+    display:block;
+}
+.navbar{
+    width:100%;
+    padding-top:10px;
+    padding-bottom: 15px;
+}
+
+.navbar-brand .logo{
+    width:161px;
+    height:43px;
+}
+
+@media screen and (max-width:996px) {
+    .navbar-brand .logo{
+        width:131px;
+        height:33px;
+    }
+    .nav-login li{
+        margin:0px;
+    }
+   
+}
+@media screen and (max-width:990px) {
+    .nav_search{
+        display: none;
+    }
+    
+
+}
+.header1 li a{
+    color:#fff;
+    font-size: 13px;
+
+}
+.header1 li{
+    margin:10px;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+/*-------------------cart----------------*/
+.t::after{
+    font-family: 'themify';
+    top: -2rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    left: calc(50% - 2rem + .125rem);
+}

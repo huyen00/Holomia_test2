@@ -116,24 +116,40 @@ h1::after{
     margin-left: 0;
 }
 /*----------------------main----------*/
+.item1::after{
+    content:" |";
+    margin-left:.5rem;
+    
+}
 .explosive{
     /* position: relative; */
     /* height:100vh; */
     background-color: #0F131E !important;
 }
-/* .background{
-    background-image: url(../test3/test3/assets/img/bg_shape.png);
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    position: absolute;
-    background-position:center;
-    background-size:cover;
-    background-attachment:fixed;
+.review_score{
+    height: 30px;
+}
 
-} */
-
+.main-explosive {
+    display: flex;
+}
+.explosive-left {
+    width:66%;
+    padding-right:10px;
+}
+.explosive-right{
+    width:33%;
+    padding-left:10px;
+}
+@media screen and (max-width:976px){
+    .explosive-left {
+        width:100%;
+    }
+    .explosive-right{
+        width:100%;
+        margin-top:20px;
+    }
+}
 .text-gray{
     color: #adb5bd !important;
     font-size: 0.9375rem !important;
@@ -149,7 +165,7 @@ h1::after{
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 22px 0 22px 22px;
+    border-width: 15px 0 15px 15px;
     border-color: transparent transparent transparent #ffc107;
     position: absolute;
     top: 0;
@@ -170,6 +186,7 @@ h1::after{
     background: #151515;
     padding:2px;
     align-items: center;
+    height:30px;
 }
 .star_rating::after{
     content: "";
@@ -184,10 +201,17 @@ h1::after{
 }
 .tag-item{
     margin-top:20px;
-    padding-left:15px
+    padding-left:15px;
+   
 }
 .tag-item a{
     color:black;
+    text-decoration: none !important;
+    font-size: 0.75rem !important;
+    border-radius: 3px;
+}
+.tag-item a:hover{
+    color:black !important;
 }
 .tag-list{
     list-style: none;
@@ -202,11 +226,26 @@ h1::after{
 }
 
 /*----------more like this --------------*/
-.img-item img{
+.imgmorelike{
     position: relative;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+}
+.title-img-morelike{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left:10px;
+    padding-bottom:10px;
+}
+.title-img-morelike a{
+    text-decoration: none !important;
+}
+.pice-morelike{
+    font-size: 0.875rem !important;
 }
 .title-img {
     position: absolute;
@@ -215,6 +254,22 @@ h1::after{
     right:50%;
     background-color: rgba(0, 0, 0, 0.8) !important;
 }
+/*-----------game information -------------*/
+.iconn{
+    text-decoration: none !important;
+    border-radius: 3px;
+}
+.iconn:hover{
+    background-color: #ffc107;
+    
+    
+}
+.fa-windows{
+   font-size: 0.75rem !important;
+   font-weight: 400 !important;
+}
+
+
 /*----- col-4------*/
 .ex{
     background-color: rgba(0, 0, 0, 0.2) !important;
@@ -227,7 +282,146 @@ h1::after{
     background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
+
+/*------------------img---------------*/
 .image-item-fr{
     width:16%;
     padding-left:10px;
+}
+@media screen and (max-width:1121px){
+    .image-item-fr{
+        width:32%
+    }
+    .img1{
+        display: none !important;
+    }
+}
+.title-fea{
+    font-size: 1.0625rem;
+    font-weight: 400 !important;
+    padding:8px;
+    font-family: "Montserrat", sans-serif;
+}
+.titlee{
+    font-weight: 500 !important;
+    font-size: 0.875rem !important;
+    text-decoration: none !important;
+}
+.titlee:hover{
+    color: #00a8ff !important;
+}
+.date{
+    font-size: 0.75rem !important;
+}
+.fa-eye{
+    font-size: 80%;
+    font-weight: 400;
+}
+.view{
+    font-size: 80%;
+    font-weight: 400;
+}
+/*------------- review-best review -------------------*/
+.review-left{
+    width:66%;
+    padding-right:10px;
+}
+.review-right{
+    width:33%;
+
+}
+@media screen and (max-width:976px){
+    .review-left {
+        width:100%;
+    }
+    .review-right{
+        width:100%;
+        margin-top:30px;
+    }
+}
+.title{
+    font-size:1.1875rem !important;
+}
+.comment{
+    font-size: 0.8125rem !important;
+}
+.title-review h6{
+    font-weight: 400 !important;
+}
+.title-best h6{
+    font-weight: 400 !important;
+}
+.readmoreView{
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-decoration: none !important;
+}
+
+@media (max-width:568px){
+    .col-md-8{
+       
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .img-review{
+        display: none;
+    }
+    .col-md-4{
+       
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top:30px;
+    }
+}
+@media (max-width:774px){
+    .img-review{
+        display: none;
+    }
+    .col-md-4{
+        padding-top:30px;
+    }
+    
+}
+/*-------------------------  footer  -----------------------*/
+.footer{
+    background-color: #1a1a1a !important;
+    color: #f8f9fa !important;
+}
+li{
+    list-style-type: none !important;
+}
+.logo_content{
+    margin-top:30px
+}
+.icon{
+    display: inline;
+}
+.icon .item{
+  padding-right:20px;
+  color: #f8f9fa !important;
+}
+.tile{
+    margin-top:30px;
+    padding-bottom:30px;
+}
+@media screen and (max-width:991px){
+    .col-md-3{
+        width:49%;
+    }
+}
+@media (min-width: 768px){
+    .col-md-3 {
+        -ms-flex: 0 49%;
+        flex: 0 0 49%;
+        max-width: 49%;
+    }
+    .icon {
+        margin-top:20px;
+    }
+    .col-md-2 {
+        -ms-flex: 0 0 49%;
+        flex: 0 0 49%;
+        max-width: 49%;
+        padding-left:20px;
+    }
 }

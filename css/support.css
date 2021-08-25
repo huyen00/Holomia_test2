@@ -1,15 +1,10 @@
 body{
-    color :#fff;
+    color :#fff !important;
 }
 .container-fluid{
     padding-right:0;
     padding-left:0;
     background-color: #0F131E;
-    
-}
-.row{
-    margin-left:0;
-    margin-right:0;
 }
 h1::after{
     display:block;
@@ -110,103 +105,32 @@ h1::after{
     margin-right: 0;
     margin-left: 0;
 }
-/*----------------------------------news list------------*/
-.breadcrumb a{
-    text-decoration: none;
+/*------------------ contact Us -------------*/
+.contact-left{
+    width:56%;
 }
-.news-list::after{
-    content:"";
-    display: block;
-    border-bottom: 2px solid #3a4048 !important;
-    padding-bottom: 1rem !important;
+.contact-right{
+    width:46%;
+    background-color: rgba(16, 16, 16, 0.9) !important;
 }
-.text-gray{
-    color: #adb5bd !important;
-    font-size: 0.9375rem !important;
+.form-control{
+    background-color: #0F131E !important;
+    border-color: #3a4048 !important;
 }
-.text-gray span{
-    font-size: 0.8125rem !important;
-}
-.text-gray a{
-    text-decoration: none;
-}
-.text-gray h5 a:hover{
-    color:blue !important;
-}
-.text-gray .mb-2 a{
-    font-size: 0.8125rem !important;
-    text-decoration: none;
-}
-.badges-left{
-    position: absolute;
-}
-@media screen and( max-width:567px){
-    .col-sm-12 h5{
-        margin-top:10px;
+@media screen and (max-width:780px){
+    .contact-left{
+        width:100%;
+    }
+    .contact-right{
+        width:100%;
     }
 }
-.new{
-    position: absolute;
-    top:0;
-    margin-top:4px;
-    padding:3px;
-    border-radius: 3px;
-}
-.new a{
-    text-decoration: none;
-    padding:3px;
-    border-radius:4px;
-}
-/*------------------------------*/
-.title-pro:hover{
-    color: #587c8f !important;
-}
-/*---------------------filters------------*/
 
-.filters{
-    border:1px solid #3a4048;
-    border-radius:5px;
-    /* border-color: #3a4048 !important; */
+.map{
+    background: linear-gradient(to bottom, rgba(17, 25, 49, 0.8) 30%, rgba(15, 19, 30, 0.8) 50%);
+    right:0;
+    left:0;
 }
-.filter-item{
-    border-radius: 4px;
-}
-.filter-item a{
-    text-decoration: none;
-}
-.filter-item:hover{
-    background: rgba(255, 255, 255, 0.2);
-}
-.achive{
-    border:1px solid #3a4048;
-    display: block;
-    border-radius:5px;
-}
-.achive-item a{
-    text-decoration: none;
-}
-.achive-item a:hover{
-    color:blue !important;
-}
-.page-item a{
-    background-color: #0F131E;
-    border-color:#3a4048;
-}
-.page-item a:hover{
-    background-color: #0F131E !important;
-    color: blue !important;
-    border-color:#3a4048;
-}
-/*-------------  < 1 2 3 >  ---------------------*/
-.page-link{
-    color:#fff;
-}
-/*--------------- ------------------------*/
-.product-link::after{
-    content:" |";
-    margin-left:.5rem !important;
-}
-
 /*-------------------------  footer  -----------------------*/
 .footer{
     background-color: #1a1a1a !important;

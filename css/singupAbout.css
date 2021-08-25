@@ -125,31 +125,44 @@ h1::after{
    margin-top:20px;
 }
 /*---------------- most popular ------------------------*/
+.title-img-morelike{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left:10px;
+    padding-bottom:10px;
+}
+.po::after{
+    content:" |";
+    margin-left:.5rem !important;
+}
+.title-popu{
+    margin-top:20px;
+}
+.title-img-morelike a{
+    text-decoration: none !important;
+}
 .most_popular{
+    position: relative;
+    height:100vh;
     background-color: #0F131E;
 }
- .carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
+.background-popu{
+    background-image: url(../test3/test3/assets/img/bg_shape.png);
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: over;
+    z-index: -1;
+    background-attachment: fixed;
+    filter: brightness(80%);
 }
-
-.carousel-inner .carousel-item-right.active,
-.carousel-inner .carousel-item-next {
-  transform: translateX(25%);
-}
-
-.carousel-inner .carousel-item-left.active, 
-.carousel-inner .carousel-item-prev {
-  transform: translateX(-25%);
-}
-  
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left{ 
-  transform: translateX(0);
-  
-} 
-
 
 /*---------------- gutter ----------------------*/
 /*  */
