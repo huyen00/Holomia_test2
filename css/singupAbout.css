@@ -109,6 +109,10 @@ h1::after{
     margin-right: 0;
     margin-left: 0;
 }
+/*----- xuwr ly su kien khi hover hieen class ----------*/
+.nav-item:hover .dropdown-menu{
+    display:block;
+}
 /*-------------------------slide------------------------*/
 .slide_caption{
     margin-top:10rem;
@@ -125,14 +129,23 @@ h1::after{
    margin-top:20px;
 }
 /*---------------- most popular ------------------------*/
+.item-add-to-cart:hover .title-img-morelike{
+    display: block;
+}
 .title-img-morelike{
+    display: none;
     position: absolute;
     bottom:0;
     left:0;
     right:0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #ffc107;
     padding-left:10px;
     padding-bottom:10px;
+    text-align:center ;
+    
+}
+.nhung {
+    text-align: center;
 }
 .po::after{
     content:" |";

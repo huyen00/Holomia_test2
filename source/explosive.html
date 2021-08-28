@@ -10,9 +10,11 @@
     <script src="../test3/data/float-panel.js"></script>
     <link rel="stylesheet" href="../owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="../owlcarousel/owl.carousel.min.js"></script>
-    <script src="../js/explosive.js"></script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
     <!-- <link rel="stylesheet" href="../js/explosive.js" type="javascript"> -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -163,6 +165,46 @@
                     <div class=" row main-explosive d-inline mt-5">
                         <div class="row">
                             <div class="explosive-left p-2 border border-secondary">
+                                <div class="owl">
+                                    <div id="background-owl"></div>
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="item">
+                                            <a href="#">
+                                                <img  class="img-fluid"src="../test3/test3/assets/img/content/product/01.jpg" onclick="zoomout(this)" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/02.jpg" onclick="zoomout(this)"  alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/03.jpg"onclick="zoomout(this)"  alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/04.jpg" onclick="zoomout(this)"  alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/05.jpg" onclick="zoomout(this)"  alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/01.jpg" onclick="zoomout(this)"  alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/02.jpg" onclick="zoomout(this)"  alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="aboutGame mt-5 ">
                                     <div class="title-about pb-4">
                                         <h6 class="text-white text-uppercase">about this game</h6>
@@ -834,20 +876,26 @@
                                     
                                     <div class="row d-block mt-3">
                                         <span class="d-block title" >Class aptent taciti sociosqu ad litora torquent per conubia nostra</span>
-                                        <p  class="comment d-block mt-3">Vestibulum vitae sem eget tortor dignissim convallis.
-                                             Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
-                                             Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
-                                        eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.</p>
-                                           <p id="coment-read " class="nav-collapse collapse comment"> Cras vitae justo nisi. cras in congue turpis. Cras cursus vestibulum diam , vel mollis diam tempus ac duismod
-                                            Duis euismod diam et ante egestas, sed porttitor orci euismod.
-                                             In quis ligula fermentum, elementum quam quis, pellentesque lorem.
-                                              Vivamus eget ligula ante. 
-                                              Aliquam porttitor nisl sit amet malesuada finibus. 
-                                              Etiam sit amet porttitor purus. Etiam at aliquam massa. 
-                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                             Suspendisse cursus sollicitudin malesuada.
-                                        </p>
-                                        <a href="#coment-read" data-toggle="collapse" aria-expanded="false"  class="readmoreView text-info">+ READ MORE</a>
+                                        <div class="sidebar-box">
+                                            <p  class="comment d-block mt-3">Vestibulum vitae sem eget tortor dignissim convallis.
+                                                Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
+                                                Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
+                                           eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.
+                                              Cras vitae justo nisi. cras in congue turpis. Cras cursus vestibulum diam , vel mollis diam tempus ac duismod
+                                               Duis euismod diam et ante egestas, sed porttitor orci euismod.
+                                                In quis ligula fermentum, elementum quam quis, pellentesque lorem.
+                                                 Vivamus eget ligula ante. 
+                                                 Aliquam porttitor nisl sit amet malesuada finibus. 
+                                                 Etiam sit amet porttitor purus. Etiam at aliquam massa. 
+                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Suspendisse cursus sollicitudin malesuada.
+                                           </p>
+                                           <div class="before"></div>
+                                        </div>
+                                        <div>
+                                            <p class="read readmoreView text-info">+ READ MORE</p>
+                                        </div>
+                                       
                                     </div>
                                    
                                 </div>
@@ -882,20 +930,26 @@
                                     
                                     <div class="row d-block mt-3">
                                         <span class="d-block title" >Class aptent taciti sociosqu ad litora torquent per conubia nostra</span>
-                                        <p  class="comment d-block mt-3">Vestibulum vitae sem eget tortor dignissim convallis.
-                                             Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
-                                             Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
-                                        eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.</p>
-                                           <p id="coment-read2 " class="nav-collapse collapse comment"> Cras vitae justo nisi. cras in congue turpis. Cras cursus vestibulum diam , vel mollis diam tempus ac duismod
-                                            Duis euismod diam et ante egestas, sed porttitor orci euismod.
-                                             In quis ligula fermentum, elementum quam quis, pellentesque lorem.
-                                              Vivamus eget ligula ante. 
-                                              Aliquam porttitor nisl sit amet malesuada finibus. 
-                                              Etiam sit amet porttitor purus. Etiam at aliquam massa. 
-                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                             Suspendisse cursus sollicitudin malesuada.
-                                        </p>
-                                        <a href="#coment-read2" data-toggle="collapse" aria-expanded="false" class="readmoreView text-info">+ READ MORE</a>
+                                        <div class="box">
+                                            <p  class="comment d-block mt-3">Vestibulum vitae sem eget tortor dignissim convallis.
+                                                Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
+                                                Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
+                                           eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.
+                                              Cras vitae justo nisi. cras in congue turpis. Cras cursus vestibulum diam , vel mollis diam tempus ac duismod
+                                               Duis euismod diam et ante egestas, sed porttitor orci euismod.
+                                                In quis ligula fermentum, elementum quam quis, pellentesque lorem.
+                                                 Vivamus eget ligula ante. 
+                                                 Aliquam porttitor nisl sit amet malesuada finibus. 
+                                                 Etiam sit amet porttitor purus. Etiam at aliquam massa. 
+                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Suspendisse cursus sollicitudin malesuada.
+                                           </p>
+                                           <div class="backgr"></div>
+                                        </div>
+                                        <div>
+                                            <p class="rea text-info">+ READ MORE</p>
+                                        </div>
+                                       
                                     </div>
                                    
                                 </div>
@@ -930,20 +984,23 @@
                                     
                                     <div class="row d-block mt-3">
                                         <span class="d-block title" >Class aptent taciti sociosqu ad litora torquent per conubia nostra</span>
-                                        <p  class="comment d-block mt-3">Vestibulum vitae sem eget tortor dignissim convallis.
-                                             Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
-                                             Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
-                                        eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.</p>
-                                           <p id="coment-read3 " class="nav-collapse collapse comment"> Cras vitae justo nisi. cras in congue turpis. Cras cursus vestibulum diam , vel mollis diam tempus ac duismod
-                                            Duis euismod diam et ante egestas, sed porttitor orci euismod.
-                                             In quis ligula fermentum, elementum quam quis, pellentesque lorem.
-                                              Vivamus eget ligula ante. 
-                                              Aliquam porttitor nisl sit amet malesuada finibus. 
-                                              Etiam sit amet porttitor purus. Etiam at aliquam massa. 
-                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                             Suspendisse cursus sollicitudin malesuada.
-                                        </p>
-                                        <a href="#coment-read3" data-toggle="collapse" aria-expanded="false" class="readmoreView text-info">+ READ MORE</a>
+                                        <div class="box">
+                                            <p  class="comment d-block mt-3">Vestibulum vitae sem eget tortor dignissim convallis.
+                                                Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
+                                                Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
+                                           eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.
+                                              Cras vitae justo nisi. cras in congue turpis. Cras cursus vestibulum diam , vel mollis diam tempus ac duismod
+                                               Duis euismod diam et ante egestas, sed porttitor orci euismod.
+                                                In quis ligula fermentum, elementum quam quis, pellentesque lorem.
+                                                 Vivamus eget ligula ante. 
+                                                 Aliquam porttitor nisl sit amet malesuada finibus. 
+                                                 Etiam sit amet porttitor purus. Etiam at aliquam massa. 
+                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Suspendisse cursus sollicitudin malesuada.
+                                           </p>
+                                           <div class="backgr"></div>
+                                        </div>
+                                        <p class="rea text-info">+ READ MORE</p>
                                     </div>
                                    
                                 </div>
@@ -1130,8 +1187,10 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/explosive.js"></script>
   </body>
 </html>

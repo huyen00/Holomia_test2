@@ -4,7 +4,11 @@ body{
 .container-fluid{
     padding-right:0;
     padding-left:0;
-    background-color: #0F131E;
+    background-color: #0F131E;;
+}
+.row{
+    margin-left:0;
+    margin-right:0;
 }
 h1::after{
     display:block;
@@ -25,7 +29,7 @@ h1::after{
     display: inline;
 }
 .list-menu {
-    display: inline;
+    display: flex !important;
 }
 .nav-link{
     display: inline;
@@ -54,7 +58,7 @@ h1::after{
    
 }
 .dropdown-menu{
-    border-bottom: 2px solid #ffc107;
+    border-bottom: 2px solid #ffc107 !important;
     border-radius: 0rem;
     padding:10px;
 }
@@ -93,11 +97,7 @@ h1::after{
     
 
 }
-.header1 li a{
-    color:#fff;
-    font-size: 13px;
 
-}
 .header1 li{
     margin:10px;
 }
@@ -105,12 +105,92 @@ h1::after{
     margin-right: 0;
     margin-left: 0;
 }
+/*         ----- xu ly su kien khi hover hien class khac --------*/
+.nav-item:hover .dropdown-menu{
+    display:block;
+}
+.dropdown-item:hover{
+    background-color: #ffc107!important;
+}
+
+
+/*
+                            
+                           */
 /*-------------------cart----------------*/
-.t::after{
+.t ::after{
     font-family: 'themify';
     top: -2rem;
     width: 4rem;
     height: 4rem;
     font-size: 1.7rem;
     left: calc(50% - 2rem + .125rem);
+}
+.title{
+    font-weight: 600;
+    font-size: 0.9375rem !important;
+}
+.btn{
+    border-radius: 0 !important;
+}
+.left-your-cart{
+    width:66.6% !important;
+    
+}
+.right-your-cart{
+    width:33% !important;
+    padding-left:20px !important;
+}
+@media screen and (max-width:995px){
+    .left-your-cart{
+        width:100% !important;
+        
+    }
+    .right-your-cart{
+        width:100% !important;
+        margin-top:30px;
+    }
+}
+/*-------------------------  footer  -----------------------*/
+.footer{
+    background-color: #1a1a1a !important;
+    color: #f8f9fa !important;
+}
+li{
+    list-style-type: none !important;
+}
+.logo_content{
+    margin-top:30px
+}
+.icon{
+    display: inline;
+}
+.icon .item{
+  padding-right:20px;
+  color: #f8f9fa !important;
+}
+.tile{
+    margin-top:30px;
+    padding-bottom:30px;
+}
+@media screen and (max-width:991px){
+    .col-md-3{
+        width:49%;
+    }
+}
+@media (min-width: 768px){
+    .col-md-3 {
+        -ms-flex: 0 49%;
+        flex: 0 0 49%;
+        max-width: 49%;
+    }
+    .icon {
+        margin-top:20px;
+    }
+    .col-md-2 {
+        -ms-flex: 0 0 49%;
+        flex: 0 0 49%;
+        max-width: 49%;
+        padding-left:20px;
+    }
 }

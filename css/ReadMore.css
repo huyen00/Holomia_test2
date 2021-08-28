@@ -110,6 +110,10 @@ h1::after{
     margin-right: 0;
     margin-left: 0;
 }
+/*----- xuwr ly su kien khi hover hieen class ----------*/
+.nav-item:hover .dropdown-menu{
+    display:block;
+}
 /*----------------------------------news list------------*/
 .breadcrumb a{
     text-decoration: none;

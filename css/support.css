@@ -105,6 +105,10 @@ h1::after{
     margin-right: 0;
     margin-left: 0;
 }
+/*----- xuwr ly su kien khi hover hieen class ----------*/
+.nav-item:hover .dropdown-menu{
+    display:block;
+}
 /*------------------ contact Us -------------*/
 .contact-left{
     width:56%;
@@ -113,7 +117,7 @@ h1::after{
     width:46%;
     background-color: rgba(16, 16, 16, 0.9) !important;
 }
-.form-control{
+.inputt-contact{
     background-color: #0F131E !important;
     border-color: #3a4048 !important;
 }
