@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="../css/explosive.css" type="text/css">
     <link rel ="stylesheet" type="text/css" href="../test3/data/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
     <script src="../test3/data/float-panel.js"></script>
+<!--css slick-->
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+<!--js - slick carousel -->
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+                    
+
     <link rel="stylesheet" href="../owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../owlcarousel/assets/owl.theme.default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -165,52 +172,53 @@
                     <div class=" row main-explosive d-inline mt-5">
                         <div class="row">
                             <div class="explosive-left p-2 border border-secondary">
-                                <div class="owl">
-                                    <div id="background-owl"></div>
-                                    <div class="owl-carousel owl-theme">
-                                        <div class="item">
-                                            <a href="#">
-                                                <img  class="img-fluid"src="../test3/test3/assets/img/content/product/01.jpg" onclick="zoomout(this)" alt="">
-                                            </a>
+                                <div class="owl px-2">
+                                    <div class="slider-for " >
+                                        <div><img class="img-fluid" src="../test3/test3/assets/img/content/product/01.jpg" alt=""></div>
+                                        <div><img class="img-fluid" src="../test3/test3/assets/img/content/product/02.jpg" alt=""></div>
+                                        <div><img class="img-fluid"src="../test3/test3/assets/img/content/product/03.jpg" alt=""></div>
+                                        <div><img class="img-fluid" src="../test3/test3/assets/img/content/product/04.jpg" alt=""></div>
+                                        <div><img class="img-fluid"src="../test3/test3/assets/img/content/product/05.jpg" alt=""></div>
+                                        <div><img class="img-fluid" src="../test3/test3/assets/img/content/product/01.jpg" alt=""></div>
+                                        <div><img class="img-fluid" src="../test3/test3/assets/img/content/product/02.jpg" alt=""></div>
+                                        <div><img class="img-fluid" src="../test3/test3/assets/img/content/product/03.jpg" alt=""></div>
+                                    </div>
+                                    <div class="slider-nav">
+                                        <div><img class="img-fluid px-1 m" id="img_1" src="../test3/test3/assets/img/content/product/01.jpg" alt=""></div>
+                                        <div><img class="img-fluid px-1 m" id="img_2" src="../test3/test3/assets/img/content/product/02.jpg" alt=""></div>
+                                        <div><img class="img-fluid px-1 m" id="img_3"src="../test3/test3/assets/img/content/product/03.jpg" alt=""></div>
+                                        <div><img class="img-fluid px-1 m" id="img_4" src="../test3/test3/assets/img/content/product/04.jpg" alt=""></div>
+                                        <div><img class="img-fluid px-1 m" id="img_5" src="../test3/test3/assets/img/content/product/05.jpg" alt=""></div>
+                                        <div><img class="img-fluid px-1 m" id="img_6" src="../test3/test3/assets/img/content/product/01.jpg" alt=""></div>
+                                        <div><img class="img-fluid px-1 m" id="img_7"src="../test3/test3/assets/img/content/product/02.jpg" alt=""></div>
+                                        <div><img class="img-fluid px-1 m" id="img_8"src="../test3/test3/assets/img/content/product/03.jpg" alt=""></div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="mt-4 share px-2" style="background-color: #232533;">
+                                    <div class="clearfix px-3 py-3">
+                                        <div class="float-left">
+                                            <span class="text-uppercase text-warning">share:</span>
                                         </div>
-                                        <div class="item">
-                                            <a href="#">
-                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/02.jpg" onclick="zoomout(this)"  alt="">
+                                        <div class="float-right">
+                                            <a href="#" class="text-white">
+                                                <i class="fab fa-twitter px-2"></i>
                                             </a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="#">
-                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/03.jpg"onclick="zoomout(this)"  alt="">
+                                            <a href="#" class="text-white">
+                                                <i class="fab fa-dribbble px-2"></i>
                                             </a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="#">
-                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/04.jpg" onclick="zoomout(this)"  alt="">
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="#">
-                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/05.jpg" onclick="zoomout(this)"  alt="">
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="#">
-                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/01.jpg" onclick="zoomout(this)"  alt="">
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="#">
-                                                <img class="img-fluid" src="../test3/test3/assets/img/content/product/02.jpg" onclick="zoomout(this)"  alt="">
+                                            <a href="#" class="text-white">
+                                                <i class="fab fa-instagram px-2"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="aboutGame mt-5 ">
+                                <div class="aboutGame mt-5 px-2">
                                     <div class="title-about pb-4">
                                         <h6 class="text-white text-uppercase">about this game</h6>
                                     </div>
                                     <div class="content-about d-block">
-                                        <P class="text-white border-top pt-3 border-secondary">Sed placerat posuere sem ut luctus. 
+                                        <P class="text-gray border-top pt-3 border-secondary comment-about" id="comabout_1">Sed placerat posuere sem ut luctus. 
                                             Nunc nec odio luctus, eleifend enim nec, pretium arcu.
                                              Nam lobortis metus at ipsum dignissim, in consequat nunc laoreet.
                                              Suspendisse malesuada suscipit aliquet.
@@ -218,11 +226,26 @@
                                               Phasellus tincidunt massa nec vestibulum accumsan.
                                              Proin eleifend dapibus tortor eu laoreet.
                                              In nunc mauris,
+                                             Aliquam sit amet justo nibh. 
+                                              Phasellus tincidunt massa nec vestibulum accumsan.
+                                             Proin eleifend dapibus tortor eu laoreet.
+                                             In nunc mauris,
+                                             Nunc nec odio luctus, eleifend enim nec, pretium arcu.
+                                             Nam lobortis metus at ipsum dignissim, in consequat nunc laoreet.
+                                             Suspendisse malesuada suscipit aliquet.
+                                              Aliquam sit amet justo nibh. 
+                                              Phasellus tincidunt massa nec vestibulum accumsan.
+                                             Proin eleifend dapibus tortor eu laoreet.
+                                             In nunc mauris,
+                                             Aliquam sit amet justo nibh. 
+                                              Phasellus tincidunt massa nec vestibulum accumsan.
+                                             Proin eleifend dapibus tortor eu laoreet.
+                                             In nunc mauris,
                                         </P>
-                                        <a href="#" class="text-uppercase text-info" style="text-decoration: none;font-size: 0.875rem !important;">+ read more</a>
+                                        <p id="read_1" class="text-uppercase text-info readcom-about" style="font-size: 0.875rem !important;">+ read more</p>
                                     </div>
                                 </div>
-                                <div class="system mt-5">
+                                <div class="system mt-5 px-2">
                                     <h6 class="text-uppercase text-white">system requirements</h6>
                                     <hr class="border-secondary py-2">
                                     <div >
@@ -535,7 +558,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="moreLike mt-5">
+                                <div class="moreLike mt-5 px-2">
                                     <div class="title-moreLike">
                                         <h6 class="text-uppercase">More like this</h6>
                                     </div>
@@ -543,7 +566,7 @@
                                    
                                      <!-- <div class="content-moreLike">  -->
                                         <div class="owl-carousel owl-theme">
-                                            <div class="item">
+                                            <div class="item1">
                                                 <a href="">
                                                     <img class="imgmorelike" src="../test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
                                                 </a>
@@ -554,7 +577,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="item">
+                                            <div class="item1">
                                                 <a href="">
                                                     <img class="imgmorelike" src="../test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
                                                 </a>
@@ -565,7 +588,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="item">
+                                            <div class="item1">
                                                 <a href="">
                                                     <img class="imgmorelike" src="../test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
                                                 </a>
@@ -576,7 +599,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="item">
+                                            <div class="item1">
                                                 <a href="">
                                                     <img class="imgmorelike" src="../test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
                                                 </a>
@@ -587,7 +610,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="item">
+                                            <div class="item1">
                                                 <a href="">
                                                     <img class="imgmorelike" src="../test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
                                                 </a>
@@ -598,7 +621,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="item">
+                                            <div class="item1">
                                                 <a href="">
                                                     <img class="imgmorelike" src="../test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
                                                 </a>
@@ -609,7 +632,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="item">
+                                            <div class="item1">
                                                 <a href="">
                                                     <img class="imgmorelike" src="../test3/test3/assets/img/content/cont/cg-c_01.jpg" alt="">
                                                 </a>
@@ -641,14 +664,14 @@
                                     <div class="p-3 mt-2">
                                         <div class="image d-block">
                                             <img class="img-fluid" src="../test3/test3/assets/img/content/product/02.jpg" alt="">
-                                            <span class="d-block mt-3">Sed neque nibh, vehicula vel molestie eget, venenatis in odio.
+                                            <span class="d-block mt-3 text-gray">Sed neque nibh, vehicula vel molestie eget, venenatis in odio.
                                                  Nulla nec metus sagittis, scelerisque leo eu, vestibulum justo.
                                                  Mauris rhoncus arcu eu sagittis consequat.</span>
-                                            <span class="d-block mt-4">300$</span>
-                                            <span class="text-warning">224$</span>
+                                            <span class="d-block mt-4"style="font-size:.775rem">300$</span>
+                                            <span class="text-warning" style="font-size: 1.6rem;">224$</span>
                                         </div>
                                         <div class="row mt-3 w-100 ml-1">
-                                            <span class="save w-100 p-2 ">Save: $20.00 (33%)</span>
+                                            <span class="save w-100 p-2 " style="font-size: .85rem;">Save: $20.00 (33%)</span>
                                         </div>
                                         <div class="add border border-secondary mt-4">
                                             <div class="add-item p-2 d-flex">
@@ -660,7 +683,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <a href="" class="btn btn-warning text-uppercase ml-1"><i class="fas fa-shopping-cart"></i>add to cart</a>
+                                                    <a href="" class="btn btn-warning text-uppercase ml-1" style="font-size: 0.6875rem; width:100%;margin-top:10px"><i class="fas fa-shopping-cart"></i>add to cart</a>
                                                 </div>
                                             </div>
                                             
@@ -670,17 +693,17 @@
                                                 <div class="clearfix">
                                                     <div class="check-left float-left ">
                                                         <input type="checkbox" id="check1" name="check1" value="Bike">
-                                                        <a href=""><label for="check1">ADD TO COMPARE</label></a>
+                                                        <a href=""><label class="text-white"for="check1" style="font-size: 0.6875rem;">ADD TO COMPARE</label></a>
                                                     </div>
                                                     <div class="check-right float-right ml-5">
                                                         <input type="checkbox" id="check2" name="check2" value="Bike">
-                                                        <a href=""><label for="check2">BUY AS GIFT</label></a>
+                                                        <a href=""><label class="text-white" for="check2"style="font-size: 0.6875rem;">BUY AS GIFT</label></a>
                                                     </div>
                                                 </div>
                                                 
                                             </form>
                                             <div class="addwishlist w-100 mt-3">
-                                                <a href="" class="btn btn-secondary text-uppercase w-100">
+                                                <a href="" class="btn btn-secondary text-uppercase w-100"style="font-size: 0.6875rem;">
                                                     <i class="fas fa-heart"></i>
                                                     add to wishlist
                                                 </a>
@@ -876,8 +899,8 @@
                                     
                                     <div class="row d-block mt-3">
                                         <span class="d-block title" >Class aptent taciti sociosqu ad litora torquent per conubia nostra</span>
-                                        <div class="sidebar-box">
-                                            <p  class="comment d-block mt-3">Vestibulum vitae sem eget tortor dignissim convallis.
+                                        <div class="box">
+                                            <p  class="comment d-block mt-3" id="com_1">Vestibulum vitae sem eget tortor dignissim convallis.
                                                 Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
                                                 Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
                                            eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.
@@ -890,10 +913,10 @@
                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Suspendisse cursus sollicitudin malesuada.
                                            </p>
-                                           <div class="before"></div>
+                                           <div class="backgr" id="back_1"></div>
                                         </div>
                                         <div>
-                                            <p class="read readmoreView text-info">+ READ MORE</p>
+                                            <p class="rea readmoreView text-info" id="rea_1">+ READ MORE</p>
                                         </div>
                                        
                                     </div>
@@ -931,7 +954,7 @@
                                     <div class="row d-block mt-3">
                                         <span class="d-block title" >Class aptent taciti sociosqu ad litora torquent per conubia nostra</span>
                                         <div class="box">
-                                            <p  class="comment d-block mt-3">Vestibulum vitae sem eget tortor dignissim convallis.
+                                            <p  class="comment d-block mt-3 " id="com_2">Vestibulum vitae sem eget tortor dignissim convallis.
                                                 Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
                                                 Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
                                            eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.
@@ -944,10 +967,10 @@
                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Suspendisse cursus sollicitudin malesuada.
                                            </p>
-                                           <div class="backgr"></div>
+                                           <div class="backgr" id="back_2"></div>
                                         </div>
                                         <div>
-                                            <p class="rea text-info">+ READ MORE</p>
+                                            <p class="rea readmoreView text-info" id="rea_2">+ READ MORE</p>
                                         </div>
                                        
                                     </div>
@@ -985,7 +1008,7 @@
                                     <div class="row d-block mt-3">
                                         <span class="d-block title" >Class aptent taciti sociosqu ad litora torquent per conubia nostra</span>
                                         <div class="box">
-                                            <p  class="comment d-block mt-3">Vestibulum vitae sem eget tortor dignissim convallis.
+                                            <p  class="comment d-block mt-3" id="com_3">Vestibulum vitae sem eget tortor dignissim convallis.
                                                 Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
                                                 Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
                                            eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.
@@ -998,9 +1021,9 @@
                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Suspendisse cursus sollicitudin malesuada.
                                            </p>
-                                           <div class="backgr"></div>
+                                           <div class="backgr" id="back_3"></div>
                                         </div>
-                                        <p class="rea text-info">+ READ MORE</p>
+                                        <p class="rea readmoreView text-info" id="rea_3">+ READ MORE</p>
                                     </div>
                                    
                                 </div>
@@ -1025,14 +1048,25 @@
                                         </div>
                                         <div class="row d-block">
                                             <span class="title ">Sociosqu ad litora torquent</span>
-                                            <span class="d-block mt-2 comment">Vestibulum vitae sem eget tortor dignissim convallis.
-                                                 Sed a vehicula tortor. Etiam semper gravida erat eget tristique. 
-                                                 nteger suscipit finibus diam, vestibulum lobortis eros lobortis eu.
-                                                 Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a. 
-                                                 Cras vitae justo nisi. Cras in congue turpis.
-                                                 Cras cursus vestibulum diam.
-                                            </span>
-                                            <a href="#" aria-expanded="false" data-toggle="collapse" class="readmoreView text-info pd-2">+ READ MORE</a>
+                                            <div class="box">
+                                                <p  class="comment d-block mt-3 " id="com_4">Vestibulum vitae sem eget tortor dignissim convallis.
+                                                    Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
+                                                    Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
+                                               eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.
+                                                  Cras vitae justo nisi. cras in congue turpis. Cras cursus vestibulum diam , vel mollis diam tempus ac duismod
+                                                   Duis euismod diam et ante egestas, sed porttitor orci euismod.
+                                                    In quis ligula fermentum, elementum quam quis, pellentesque lorem.
+                                                     Vivamus eget ligula ante. 
+                                                     Aliquam porttitor nisl sit amet malesuada finibus. 
+                                                     Etiam sit amet porttitor purus. Etiam at aliquam massa. 
+                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Suspendisse cursus sollicitudin malesuada.
+                                               </p>
+                                               <div class="backgr" id="back_4"></div>
+                                            </div>
+                                            <div>
+                                                <p class="rea text-info" id="rea_4">+ READ MORE</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <hr class="border-secondary">
@@ -1049,14 +1083,25 @@
                                         </div>
                                         <div class="row d-block">
                                             <span class="title">Sociosqu ad litora torquent</span>
-                                            <span class="d-block mt-2 comment">Vestibulum vitae sem eget tortor dignissim convallis.
-                                                 Sed a vehicula tortor. Etiam semper gravida erat eget tristique. 
-                                                 nteger suscipit finibus diam, vestibulum lobortis eros lobortis eu.
-                                                 Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a. 
-                                                 Cras vitae justo nisi. Cras in congue turpis.
-                                                 Cras cursus vestibulum diam.
-                                            </span>
-                                            <a href="#" aria-expanded="false" data-toggle="collapse" class="readmoreView text-info">+ READ MORE</a>
+                                            <div class="box">
+                                                <p  class="comment d-block mt-3" id="com_5">Vestibulum vitae sem eget tortor dignissim convallis.
+                                                    Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
+                                                    Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
+                                               eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.
+                                                  Cras vitae justo nisi. cras in congue turpis. Cras cursus vestibulum diam , vel mollis diam tempus ac duismod
+                                                   Duis euismod diam et ante egestas, sed porttitor orci euismod.
+                                                    In quis ligula fermentum, elementum quam quis, pellentesque lorem.
+                                                     Vivamus eget ligula ante. 
+                                                     Aliquam porttitor nisl sit amet malesuada finibus. 
+                                                     Etiam sit amet porttitor purus. Etiam at aliquam massa. 
+                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Suspendisse cursus sollicitudin malesuada.
+                                               </p>
+                                               <div class="backgr" id="back_5"></div>
+                                            </div>
+                                            <div>
+                                                <p class="rea readmoreView text-info" id="rea_5">+ READ MORE</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <hr class="border-secondary">
@@ -1073,14 +1118,25 @@
                                         </div>
                                         <div class="row d-block">
                                             <span class="title ">Sociosqu ad litora torquent</span>
-                                            <span class="d-block mt-2 comment">Vestibulum vitae sem eget tortor dignissim convallis.
-                                                 Sed a vehicula tortor. Etiam semper gravida erat eget tristique. 
-                                                 nteger suscipit finibus diam, vestibulum lobortis eros lobortis eu.
-                                                 Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a. 
-                                                 Cras vitae justo nisi. Cras in congue turpis.
-                                                 Cras cursus vestibulum diam.
-                                            </span>
-                                            <a href="#" aria-expanded="false" data-toggle="collapse" class="readmoreView text-info" >+ READ MORE</a>
+                                            <div class="box">
+                                                <p  class="comment d-block mt-3" id="com_6">Vestibulum vitae sem eget tortor dignissim convallis.
+                                                    Sed a vehicula tortor. Etiam semper gravida erat eget tristique.
+                                                    Integer suscipit finibus diam, vestibulum lobortis eros lobortis...
+                                               eu.Sed blandit tincidunt nibh, nec ullamcorper lacus porttitor a.
+                                                  Cras vitae justo nisi. cras in congue turpis. Cras cursus vestibulum diam , vel mollis diam tempus ac duismod
+                                                   Duis euismod diam et ante egestas, sed porttitor orci euismod.
+                                                    In quis ligula fermentum, elementum quam quis, pellentesque lorem.
+                                                     Vivamus eget ligula ante. 
+                                                     Aliquam porttitor nisl sit amet malesuada finibus. 
+                                                     Etiam sit amet porttitor purus. Etiam at aliquam massa. 
+                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Suspendisse cursus sollicitudin malesuada.
+                                               </p>
+                                               <div class="backgr" id="back_6"></div>
+                                            </div>
+                                            <div>
+                                                <p class="rea readmoreView text-info" id="rea_6">+ READ MORE</p>
+                                            </div>
                                         </div>
                                     </div>
                                     
@@ -1191,6 +1247,7 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
     <script src="../js/explosive.js"></script>
   </body>
 </html>

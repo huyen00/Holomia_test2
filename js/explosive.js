@@ -1,24 +1,63 @@
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
-    center: true,
-    items:2,
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        600:{
-            items:4
-        }
-    }
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+   
   });
-  
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true,
+    
+  });
 });
 
+$(document).ready(function(){
+  $('.m').click(function(envent){
+    const id = this.id.split('_')[1];
+    let ckeckId = $(this).attr('class').split(' ');
+    if(checkId.find(e=>e=='n')=='n'){
+      $(this).removeClass('n');
+      $('.m').removeClass('n');
+    }
+    else{
+      $(this).addClass('n');
+      $('.m').addClass('n');
+    }
+    
+  });
+});
+
+
+//xu lý khi bấm read more thì show comment và thay chữ read more thành -show less
+$(document).ready(function(){
+  $('.readcom-about').click(function(enven){
+    const id = this.id.split('_')[1];
+    var check= $(this).attr('class').split(' ');
+    if(check.find(e=>e=='readabout')=='readabout'){
+      $(this).removeClass('readabout');
+      $(`#comabout_${id}`).removeClass('showcomment-about');
+      $(`#read_${id}`).text('+ READ MORE');
+    }
+    else{
+      $(this).addClass('readabout');
+      $(`#comabout_${id}`).addClass('showcomment-about');
+      $(`#read_${id}`).text('- SHOW LESS');
+    }
+  })
+})
+
 //xử lý hình ảnh khi đc click vào 
-function zoomout(image){
-  var src=image.src //lay duong dan cua arnh dc click
-  document.getElementById('background-owl').style.backgroundImage="url("+src+")";
-}
+// function zoomout(image){
+//   var src=image.src //lay duong dan cua arnh dc click
+//   document.getElementById('background-owl').style.backgroundImage="url("+src+")";
+// }
 
 
 $(document).ready(function(){
@@ -42,27 +81,40 @@ $(document).ready(function(){
 
 
 
-let button = document.querySelectorAll('.read')[0];
-button.addEventListener('click', () => {
-  let item = document.querySelectorAll('.comment')[0];
-  let before = document.querySelectorAll('.before')[0];
-  if(item.classList.contains('commentActive')){
-    item.classList.remove('commentActive');
-  } else{
-    item.classList.add('commentActive');
-  }
+// let button = document.querySelectorAll('.read')[0];
+// button.addEventListener('click', () => {
+//   let item = document.querySelectorAll('.comment')[0];
+//   let before = document.querySelectorAll('.before')[0];
+//   if(item.classList.contains('commentActive')){
+//     item.classList.remove('commentActive');
+//   } else{
+//     item.classList.add('commentActive');
+//   }
 
-  if(before.classList.contains('beforeActive')){
-    before.classList.remove('beforeActive');
-  } else{
-    before.classList.add('beforeActive');
-  }
-})
+//   if(before.classList.contains('beforeActive')){
+//     before.classList.remove('beforeActive');
+//   } else{
+//     before.classList.add('beforeActive');
+//   }
+// })
 
+//xử lý read more comment
 $(document).ready(function(){
   $('.rea').click(function(enven){
-    $('.comment').addClass('commentActive');
-     $('.backgr').addClass('gr');
+    const id = this.id.split('_')[1];
+    var check= $(this).attr('class').split(' ');
+    if(check.find(e=>e=='readmore')=='readmore'){
+      $(this).removeClass('readmore');
+      $(`#com_${id}`).removeClass('commentActive');
+      $(`#back_${id}`).removeClass('gr');
+      $(`#rea_${id}`).text('+ READ MORE');
+    }
+    else{
+      $(this).addClass('readmore');
+      $(`#com_${id}`).addClass('commentActive');
+      $(`#back_${id}`).addClass('gr');
+      $(`#rea_${id}`).text('+ READ MORE');
+    }
   });
  
 });
