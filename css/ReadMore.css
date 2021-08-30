@@ -60,12 +60,12 @@ h1::after{
 }
 .dropdown-menu{
     border-bottom: 2px solid #ffc107;
-    border-radius: 0rem;
+    border-radius: 5px;
     padding:10px;
 }
 .dropdown-menu a{
     font-size: 0.8125rem ;
-    color: #757575;
+    color: #757575 !important;
 }
 .dropdown-menu:hover{
     display:block;

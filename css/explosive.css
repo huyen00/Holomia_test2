@@ -64,13 +64,13 @@ h1::after{
    
 }
 .dropdown-menu{
-    border-bottom: 2px solid #ffc107;
+    border-bottom: 2px solid #ffc107 !important  ;
     border-radius: 0rem;
     padding:10px;
 }
 .dropdown-menu a{
     font-size: 0.8125rem ;
-    color: #757575;
+    color: #757575 !important;
 }
 .dropdown-menu:hover{
     display:block;
@@ -248,7 +248,15 @@ h1::after{
 .title-right{
     color: #ffc107 !important;
 }
-
+.nav-pills .nav-link {
+     border-radius: 0 !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0F131E !important;
+    border-bottom: 2px solid #fff !important;
+    width:70px !important
+}
 /*----------more like this --------------*/
 .imgmorelike{
     position: relative;

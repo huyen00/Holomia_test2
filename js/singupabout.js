@@ -16,3 +16,13 @@ $(document).ready(function(){
       }
   })
 });
+// $(document).ready(function(){
+//     $('.your-class').slick({
+//         slidesToShow: 4,
+//         slidesToScroll: 1,
+//         autoplay: false,
+//         //margin:10,
+//         autoplaySpeed: 2000,
+//       });
+          
+// })

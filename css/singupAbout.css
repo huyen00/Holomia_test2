@@ -58,13 +58,13 @@ h1::after{
    
 }
 .dropdown-menu{
-    border-bottom: 2px solid #ffc107;
+    border-bottom: 2px solid #ffc107 !important;
     border-radius: 0rem;
     padding:10px;
 }
 .dropdown-menu a{
     font-size: 0.8125rem ;
-    color: #757575;
+    color: #757575 !important;
 }
 .dropdown-menu:hover{
     display:block;
