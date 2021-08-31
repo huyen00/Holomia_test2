@@ -65,7 +65,7 @@ h1::after{
 }
 .dropdown-menu a{
     font-size: 0.8125rem ;
-    color: #757575;
+    color: #757575 !important;
 }
 .dropdown-menu:hover{
     display:block;
@@ -110,6 +110,10 @@ h1::after{
     margin-right: 0;
     margin-left: 0;
 }
+/*----- xuwr ly su kien khi hover hieen class ----------*/
+.nav-item:hover .dropdown-menu{
+    display:block;
+}
 /*--------------main-----------------*/
 .img-fluid{
     position: relative !important;
@@ -118,6 +122,17 @@ h1::after{
     background-repeat: no-repeat !important;
 }
 /*--------------popular-------------*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0F131E !important;
+    border-bottom: 1px solid #fff;
+}
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+.nav-pills .nav-link:hover{
+    color:#fff;
+}
 li{
     list-style:none;
 }

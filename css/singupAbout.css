@@ -109,6 +109,87 @@ h1::after{
     margin-right: 0;
     margin-left: 0;
 }
+/* cart */
+.form-cart{
+    width:400px;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(21, 21, 21, 0.95);
+    /* opacity: 0; */
+    /* visibility: hidden; */
+}
+.close{
+    margin-top: 30px;
+    margin-right: 30px;
+    width:100%;
+    position: relative;
+}
+.btn-close{
+    border: 0;
+    color: #fff;
+    background: rgba(21, 21, 21, 0.95);
+}
+.content-cart{
+    position: absolute;
+    margin-top:100px;
+
+}
+.input-cart{
+    background: rgba(21, 21, 21, 0.95) !important;
+    border:0;
+    width:30px;
+}
+.float-left{
+    width:80%;
+}
+/* .show{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.6s;
+}
+.cart{
+    padding:19px;
+}
+.close{
+    width:100%;
+    right:10px;
+}
+.input-cart{
+    background: rgba(21, 21, 21, 0.95) !important;
+    border:0;
+    width:30px;
+}
+.view-cart {
+  
+    margin-top: 280px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    width: 100%;
+}
+.view-cart a{
+    padding-top:10px;
+    padding-left:25%;
+    padding-right:25%;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none !important;
+}
+.view-cart a:hover{
+    background-color: #fff;
+    color:black !important;
+}
+.slt{
+    cursor: pointer;
+}
+.slg{
+    cursor: pointer;
+} */
 /*----- xuwr ly su kien khi hover hieen class ----------*/
 .nav-item:hover .dropdown-menu{
     display:block;

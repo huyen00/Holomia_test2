@@ -134,12 +134,17 @@
     <!------------------------- cart ----------------->
     <div class="container-fluid">
         <div class="container pt-5">
-            <div class="header mt-5">
+            <div class="header mt-5 w-100 border-bottom border-secondary border-left border-right">
                 <div class="col-12">
                     <div class="row">
-                        <div class="cart1 pt-5 pb-5  border-secondary border-bottom border-left border-top">
-                            <span class="text-uppercase t mx-auto">your cart</span>
+                        <div class="cart1 pt-5 pb-5  border-secondary border-top"data-step="">
+                            <span style="top:0;height:100%"><i class="fas fa-cart-plus"></i></span>
+                            <div>
+                                <span class="text-uppercase t mx-auto">your cart</span>
+                            </div>
+                            
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -169,12 +174,12 @@
                                 </div>
                                 <div class="col-md-6 col-lg-6 d-flex">
                                     <div class="ml-2 border border-secondary p-2" style=" height:2.895rem;width:7rem;border-radius:2rem">
-                                        <button class="text-warning btn-warning-outline float-left rounded-circle">
+                                        <button id="giam_1" class="text-warning btn-giam btn-warning-outline float-left rounded-circle">
                                             <i class="fas fa-minus"></i>
                                         </button>
-                                        <!-- <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value=""> -->
+                                        <input id="cart_1" class="input-cart" name="" type="text " value="0">
                                         
-                                        <button class="text-warning float-right btn-warning-outline rounded-circle">
+                                        <button id=" tang_1" class="text-warning float-right btn-tang btn-warning-outline rounded-circle">
                                             <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
@@ -210,12 +215,12 @@
                                 </div>
                                 <div class="col-md-6 col-lg-6 d-flex">
                                     <div class="ml-2 border border-secondary p-2" style=" height:2.895rem;width:7rem;border-radius:2rem">
-                                        <button class="text-warning btn-warning-outline float-left rounded-circle">
+                                        <button id="giam_2" class="text-warning btn-giam btn-warning-outline float-left rounded-circle">
                                             <i class="fas fa-minus"></i>
                                         </button>
-                                        <!-- <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value=""> -->
+                                        <input id="cart_2" class="input-cart" name="" type="text " value="0">
                                         
-                                        <button class="text-warning float-right btn-warning-outline rounded-circle">
+                                        <button id=" tang_2" class="text-warning float-right btn-tang btn-warning-outline rounded-circle">
                                             <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
@@ -251,12 +256,12 @@
                                 </div>
                                 <div class="col-md-6 col-lg-6 d-flex">
                                     <div class="ml-2 border border-secondary p-2" style=" height:2.895rem;width:7rem;border-radius:2rem">
-                                        <button class="text-warning btn-warning-outline float-left rounded-circle">
+                                        <button id="giam_3" class="text-warning btn-giam btn-warning-outline float-left rounded-circle">
                                             <i class="fas fa-minus"></i>
                                         </button>
-                                        <!-- <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value=""> -->
+                                        <input id="cart_3" class="input-cart" name="" type="text " value="0">
                                         
-                                        <button class="text-warning float-right btn-warning-outline rounded-circle">
+                                        <button id=" tang_3" class="text-warning btn-tang float-right btn-warning-outline rounded-circle">
                                             <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
@@ -292,12 +297,12 @@
                                 </div>
                                 <div class="col-md-6 col-lg-6 d-flex">
                                     <div class="ml-2 border border-secondary p-2" style=" height:2.895rem;width:7rem;border-radius:2rem">
-                                        <button class="text-warning btn-warning-outline float-left rounded-circle">
+                                        <button id="giam_4" class="text-warning btn-giam btn-warning-outline float-left rounded-circle">
                                             <i class="fas fa-minus"></i>
                                         </button>
-                                        <!-- <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value=""> -->
+                                        <input id="cart_4" class="input-cart" name="" type="text " value="0">
                                         
-                                        <button class="text-warning float-right btn-warning-outline rounded-circle">
+                                        <button id=" tang_4" class="text-warning btn-tang float-right btn-warning-outline rounded-circle">
                                             <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
@@ -333,12 +338,12 @@
                                 </div>
                                 <div class="col-md-6 col-lg-6 d-flex">
                                     <div class="ml-2 border border-secondary p-2" style=" height:2.895rem;width:7rem;border-radius:2rem">
-                                        <button class="text-warning btn-warning-outline float-left rounded-circle">
+                                        <button id="giam_5" class="text-warning btn-giam btn-warning-outline float-left rounded-circle">
                                             <i class="fas fa-minus"></i>
                                         </button>
-                                        <!-- <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value=""> -->
+                                        <input id="cart_5" class="input-cart" name="" type="text " value="0">
                                         
-                                        <button class="text-warning float-right btn-warning-outline rounded-circle">
+                                        <button id=" tang_5" class="text-warning btn-tang float-right btn-warning-outline rounded-circle">
                                             <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
@@ -544,5 +549,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../js/cart.js"></script>
+
+</body>
 </html>

@@ -118,3 +118,34 @@ $(document).ready(function(){
   });
  
 });
+
+//xử lý ẩn hiện giỏ hàng
+$(document).ready(function(){
+  $('.giohang').click(function(event){
+    $('.form-cart').addClass('show');
+  });
+  $('.btn-close').click(function(event){
+    $('.form-cart').removeClass('show');
+  });
+  $('.container-fluid').click(function(event){
+    $('.form-cart').removeClass('show');
+  });
+});
+//xu ly tang giam sl
+$(document).ready(function(){
+  $('.btn-tang').click(function(){
+          var $buttontang = $('.btn-tang');
+          var $inputt = $('.input-pice');
+          $inputt.val( parseInt($inputt.val()) + 1 ); // `parseInt` converts the `value` from a string to a number
+    });
+    $('.btn-giam').click(function(){
+      var $buttontang = $('.btn-tang');
+      var $inputt = $('.input-pice');
+      $inputt.val( parseInt($inputt.val()) - 1 );
+      if($inputt<0){
+       $('.input-cart')==0;
+      }
+    });
+  
+  
+});

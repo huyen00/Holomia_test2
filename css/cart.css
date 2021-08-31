@@ -4,7 +4,7 @@ body{
 .container-fluid{
     padding-right:0;
     padding-left:0;
-    background-color: #0F131E;;
+    background-color: #0F131E;
 }
 .row{
     margin-left:0;
@@ -105,6 +105,9 @@ h1::after{
     margin-right: 0;
     margin-left: 0;
 }
+.list-menu-div {
+    padding-top: 0px;
+}
 /*         ----- xu ly su kien khi hover hien class khac --------*/
 .nav-item:hover .dropdown-menu{
     display:block;
@@ -118,6 +121,33 @@ h1::after{
                             
                            */
 /*-------------------cart----------------*/
+.cart1::after {
+    font-family: 'themify';
+    top: -2rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    left: calc(50% - 2rem + .125rem);
+}
+[data-step].cart1::after {
+    content: attr(data-step);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    left: -1rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    color: #ffc107;
+}
+.input-cart{
+    width:30px;
+    background-color: #0F131E;
+    border:0;
+    color:#fff;
+    text-align: center;
+}
 .t ::after{
     font-family: 'themify';
     top: -2rem;
