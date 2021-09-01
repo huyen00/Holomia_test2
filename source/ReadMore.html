@@ -10,6 +10,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/ReadMore.css" type="text/css">
+    <style>
+        .body{
+            color:#fff;
+        }
+        .bg-dark{
+            background-color: black !important;
+        }
+    </style>
 </head>
   <body>
     <nav class="navbar navbar-expand-md bg-dark">
@@ -27,7 +35,7 @@
                 <div class="collapse navbar-collapse nav_login justify-content-end"  >
                     <!-- <ul class="navbar-nav "> -->
                         <ul class="navbar-nav ">
-                            <button class="btn btn-warning pb-2" aria-expanded="true" data-toggle="collapse" href="#loginn" type="submit" style="width:100px;height:30px;margin-top:8px">SIGN IN</button>
+                            <button class="btn btn-warning pb-2" aria-expanded="true" data-toggle="collapse" href="#loginn" type="submit" style="width:100px;font-size:0.8125rem;height:30px;margin-top:8px">SIGN IN</button>
                             <li class="nav-item"><a class="nav-link" href="../source/singup_about.html" >SIGN UP </a></li>
                            
                             <li class="nav-item dropdown">
@@ -38,7 +46,7 @@
                                     <a class="dropdown-item" href="#">Espanol</a>
                                 </div>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#" ><i class="fas fa-shopping-cart"></i></a></li>
+                            <li class="nav-item"><a class="nav-link giohang" href="#" ><i class="fas fa-shopping-cart"></i></a></li>
                            
                         </ul>
                     <!-- </ul> -->
@@ -100,7 +108,61 @@
             <!-- </div> -->   
         </div>   
     </nav>
+     <!----------------------------------Giỏ Hàng ----------------->
 
+     <div class="form-cart">
+        <div class="cart d-block ">
+            <div class="close mt-4 ">
+                <button class=" fw-100 text-white btn-close">X</button>
+                <hr class="border-secondary">
+            </div>
+            <div class="content-cart d-block mt-3">
+                <div class="row pt-2">
+                    <div class="col-md-10 d-flex">
+                        <div class="col-md-4 d-flex">
+                            <img class="img-fluid" src="../test3/test3/assets/img/content/store/02.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 ">
+                            <h6 class="text-uppercase">journey of the...</h6>
+                            <div class="sl d-flex">
+                                <span class="px-2 slg">-</span>
+                                <input type="text" value=1 class=" px-2 text-warning input-cart">
+                                <span class="px-2 slt">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-block">
+                        <i class="far fa-trash-alt" style="cursor: pointer;"></i>
+                        <span class="fw-500 text-warning">€44.99</span>
+                    </div>
+                </div>
+                <hr class="border-secondary">
+                <div class="row pt-2">
+                    <div class="col-md-10 d-flex">
+                        <div class="col-md-4 d-flex">
+                            <img class="img-fluid" src="../test3/test3/assets/img/content/store/02.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 ">
+                            <h6 class="text-uppercase">exploration mem...</h6>
+                            <div class="sl d-flex">
+                                <span class="px-2 slg px-2">-</span>
+                                <input type="text" value=1 class=" px-2 text-warning input-cart">
+                                <span class="px-2 slt">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-block">
+                        <i class="far fa-trash-alt"style="cursor: pointer;"></i>
+                        <span class="fw-500 text-warning">€44.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class=" w-100 view-cart">
+                <a href="../source/cart.html" class="border border-secondary text-uppercase text-white w-100 ">view cart</a>
+            </div>
+        </div>
+    </div>
+    
     
     <!---------------------- Main ------------------>
     <div class="container-fluid">
@@ -843,5 +905,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="../js/ReadMore.js"></script>
+</body>
 </html>

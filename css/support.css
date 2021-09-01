@@ -54,13 +54,13 @@ h1::after{
    
 }
 .dropdown-menu{
-    border-bottom: 2px solid #ffc107;
+    border-bottom: 2px solid #e6b114 !important;
     border-radius: 0rem;
     padding:10px;
 }
 .dropdown-menu a{
     font-size: 0.8125rem ;
-    color: #757575;
+    color: #757575 !important;
 }
 .dropdown-menu:hover{
     display:block;
@@ -109,6 +109,66 @@ h1::after{
 .nav-item:hover .dropdown-menu{
     display:block;
 }
+
+/* cart */
+.form-cart{
+    width:400px;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(21, 21, 21, 0.95);
+    opacity: 0;
+    visibility: hidden;
+}
+.show{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.6s;
+}
+.cart{
+    padding:19px;
+}
+.close{
+    width:100%;
+   
+    display: contents;
+}
+.input-cart{
+    background: rgba(21, 21, 21, 0.95) !important;
+    border:0;
+    width:30px;
+}
+.view-cart {
+  
+    margin-top: 280px;
+    text-align: center;
+    width: 100%;
+ 
+    position: relative;
+    width: 100%;
+}
+.view-cart a{
+    padding-top:10px;
+    padding-left:25%;
+    padding-right:25%;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none !important;
+}
+.view-cart a:hover{
+    background-color: #fff;
+    color:black !important;
+}
+.slt{
+    cursor: pointer;
+}
+.slg{
+    cursor: pointer;
+} 
 /*------------------ contact Us -------------*/
 .contact-left{
     width:56%;

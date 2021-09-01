@@ -184,6 +184,9 @@ h1::after{
 }
 /*----------------------main----------*/
 /*---- slick----*/
+.slick-slide.slick-current.slick-active.slick-center img{
+    border:1px solid #ffc107;
+}
 .slider-for img:active{
     border:1px solid #ffc107;
 }
@@ -471,6 +474,7 @@ h1::after{
     font-weight: 600;
     font-size: 0.75rem;
     text-decoration: none !important;
+    cursor: pointer;
 }
 
 @media (max-width:568px){

@@ -1,10 +1,3 @@
-$(document).ready(function(){
-    $('.your-class').slick({
-        autoplay:true
-    });
-    
-});
-
 //xu ly an hien gio hang
 $(document).ready(function(){
     $('.giohang').click(function(event){

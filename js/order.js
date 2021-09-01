@@ -1,11 +1,4 @@
-$(document).ready(function(){
-    $('.your-class').slick({
-        autoplay:true
-    });
-    
-});
-
-//xu ly an hien gio hang
+//xử lý ẩn hiện giỏ hàng
 $(document).ready(function(){
     $('.giohang').click(function(event){
       $('.form-cart').addClass('show');

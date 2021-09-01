@@ -26,16 +26,16 @@
                 <div class="collapse navbar-collapse nav_search  justify-content-center"  >
                     <ul class="navbar-nav ">
                         <form class="form-inline" action="">
-                            <input class="form-control mr-0 border-right-0" type="text" placeholder="Search">
-                            <button class="btn btn-warning" type="submit"><i class="fas fa-search"></i></button>
+                            <input class="form-control mr-0 border-right-0" type="text" placeholder="Search" style="border-radius: 0;">
+                            <button class="btn btn-warning" style="border-radius: 0;" type="submit"><i class="fas fa-search"></i></button>
                           </form>
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse nav_login justify-content-end"  >
                     <!-- <ul class="navbar-nav "> -->
                         <ul class="navbar-nav ">
-                            <button class="btn btn-warning" aria-expanded="true" data-toggle="collapse" href="#loginn" type="submit" style="width:100px;height:30px;margin-top:10px">SIGN IN</button>
-                            <li class="nav-item"><a class="nav-link" href="../source/singup_about.html" >SIGN UP </a></li>
+                            <button class="btn btn-warning" aria-expanded="true" data-toggle="collapse" href="#loginn" type="submit" style="width:100px;height:30px;margin-top:10px;font-size: 0.8125rem;">SIGN IN</button>
+                            <li class="nav-item" ><a class="nav-link" href="../source/singup_about.html" >SIGN UP </a></li>
                            
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#" ><i class="mr-2 fas fa-globe" ></i>EN</a>
@@ -45,7 +45,7 @@
                                     <a class="dropdown-item" href="#">Espanol</a>
                                 </div>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#" ><i class="fas fa-shopping-cart"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" ><i class="fas fa-shopping-cart giohang"></i></a></li>
                            
                         </ul>
                     <!-- </ul> -->
@@ -108,6 +108,62 @@
             
         </div>   
     </nav>
+
+     <!----------------------------------Giỏ Hàng ----------------->
+
+<div class="form-cart">
+    <div class="cart d-block ">
+        <div class="close mt-4 ">
+            <button class=" fw-100 text-white btn-close">X</button>
+            <hr class="border-secondary">
+        </div>
+        <div class="content-cart d-block mt-3">
+            <div class="row pt-2">
+                <div class="col-md-10 d-flex">
+                    <div class="col-md-4 d-flex">
+                        <img class="img-fluid" src="../test3/test3/assets/img/content/store/02.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 ">
+                        <h6 class="text-uppercase">journey of the...</h6>
+                        <div class="sl d-flex">
+                            <span class="px-2 slg">-</span>
+                            <input type="text" value=1 class=" px-2 text-warning input-cart">
+                            <span class="px-2 slt">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 d-block">
+                    <i class="far fa-trash-alt" style="cursor: pointer;"></i>
+                    <span class="fw-500 text-warning">€44.99</span>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row pt-2">
+                <div class="col-md-10 d-flex">
+                    <div class="col-md-4 d-flex">
+                        <img class="img-fluid" src="../test3/test3/assets/img/content/store/02.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 ">
+                        <h6 class="text-uppercase">exploration mem...</h6>
+                        <div class="sl d-flex">
+                            <span class="px-2 slg px-2">-</span>
+                            <input type="text" value=1 class=" px-2 text-warning input-cart">
+                            <span class="px-2 slt">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 d-block">
+                    <i class="far fa-trash-alt"style="cursor: pointer;"></i>
+                    <span class="fw-500 text-warning">€44.99</span>
+                </div>
+            </div>
+        </div>
+        <div class=" w-100 view-cart">
+            <a href="../source/cart.html" class="border border-secondary text-uppercase text-white w-100 ">view cart</a>
+        </div>
+    </div>
+</div>
+
     <!-- sign up -->
         <!-- <div class="auth-form mx-auto" id="loginn">
             <div class=" row auth-form_header">
@@ -264,7 +320,7 @@
         <div class="OurMission">
             <div class="container">
                 <div class="OurMission_item  ">
-                    <div class=" mission_item1">
+                    <div class=" mission_item1 w-100 h-100">
                         <img src="../test3/test3/assets/img/bg/bg-3.jpg" style="width:50%;height:50%" alt="">
                     </div>
                     <div class="mission_item2">
@@ -279,7 +335,7 @@
                             <p >Aenean ac</p>
                         </div>
                         <div class="item2" style="padding-top:40px;width:50px;height:30px">
-                            <button>JOIN</button>
+                            <button class ="px-3 py-2 border border-sacondary text-white" style="background-color:black;">JOIN</button>
                         </div>
                     </div>
                 </div>
@@ -528,5 +584,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <script src="../js/about.js"></script>
+</body>
 </html>

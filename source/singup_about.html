@@ -17,11 +17,22 @@
     <link rel="stylesheet" href="../owlcarousel/assets/owl.theme.default.min.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="../owlcarousel/owl.carousel.min.js"></script>
-    <script src="../js/singupabout.js"></script>
+  <!--animate-->
+  <link rel="stylesheet" href="../css/animate.css" type="text/css">
+  <link rel="stylesheet" href="../css/animate.min.css" type="text/css">
+  <link rel="stylesheet" href="../css/animate.compat.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/singupAbout.css" type="text/css">
     <!-- <script rel="stylesheet" href="js/singupabout.js" type="text/css"></script> -->
+    <style>
+      .body{
+          color:#fff;
+      }
+      .bg-dark{
+          background-color: black !important;
+      }
+  </style>
 </head>
   <body>
     <nav class="navbar navbar-expand-md bg-dark">
@@ -39,7 +50,7 @@
                 <div class="collapse navbar-collapse nav_login justify-content-end"  >
                     <!-- <ul class="navbar-nav "> -->
                         <ul class="navbar-nav ">
-                            <button class="btn btn-warning" aria-expanded="true" data-toggle="collapse" href="#loginn" type="submit" style="width:100px;height:30px;margin-top:10px">SIGN IN</button>
+                            <button class="btn btn-warning" aria-expanded="true" data-toggle="collapse" href="#loginn" type="submit" style="width:100px;height:30px;margin-top:10px;font-size: 0.8125rem;">SIGN IN</button>
                             <li class="nav-item"><a class="nav-link" href="../source/singup_about.html" >SIGN UP </a></li>
                            
                             <li class="nav-item dropdown">
@@ -50,7 +61,7 @@
                                     <a class="dropdown-item" href="#">Espanol</a>
                                 </div>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#" ><i class="fas fa-shopping-cart giohang"></i></a></li>
+                            <li class="nav-item"><a class="nav-link giohang" href="#" ><i class="fas fa-shopping-cart "></i></a></li>
                            
                         </ul>
                     <!-- </ul> -->
@@ -113,7 +124,60 @@
         </div>   
     </nav>
     <!----------------------------------Giỏ Hàng ----------------->
+ <!----------------------------------Giỏ Hàng ----------------->
 
+ <div class="form-cart">
+  <div class="cart d-block ">
+      <div class="close mt-4 ">
+          <button class=" fw-100 text-white btn-close">X</button>
+          <hr class="border-secondary">
+      </div>
+      <div class="content-cart d-block mt-3">
+          <div class="row pt-2">
+              <div class="col-md-10 d-flex">
+                  <div class="col-md-4 d-flex">
+                      <img class="img-fluid" src="../test3/test3/assets/img/content/store/02.jpg" alt="">
+                  </div>
+                  <div class="col-md-8 ">
+                      <h6 class="text-uppercase">journey of the...</h6>
+                      <div class="sl d-flex">
+                          <span class="px-2 slg">-</span>
+                          <input type="text" value=1 class=" px-2 text-warning input-cart">
+                          <span class="px-2 slt">+</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-2 d-block">
+                  <i class="far fa-trash-alt" style="cursor: pointer;"></i>
+                  <span class="fw-500 text-warning">€44.99</span>
+              </div>
+          </div>
+          <hr class="border-secondary">
+          <div class="row pt-2">
+              <div class="col-md-10 d-flex">
+                  <div class="col-md-4 d-flex">
+                      <img class="img-fluid" src="../test3/test3/assets/img/content/store/02.jpg" alt="">
+                  </div>
+                  <div class="col-md-8 ">
+                      <h6 class="text-uppercase">exploration mem...</h6>
+                      <div class="sl d-flex">
+                          <span class="px-2 slg px-2">-</span>
+                          <input type="text" value=1 class=" px-2 text-warning input-cart">
+                          <span class="px-2 slt">+</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-2 d-block">
+                  <i class="far fa-trash-alt"style="cursor: pointer;"></i>
+                  <span class="fw-500 text-warning">€44.99</span>
+              </div>
+          </div>
+      </div>
+      <div class=" w-100 view-cart">
+          <a href="../source/cart.html" class="border border-secondary text-uppercase text-white w-100 ">view cart</a>
+      </div>
+  </div>
+</div>
 
     <!------------------------Main ---------------->
     <div class="container-fluid">
@@ -128,14 +192,14 @@
                 <div class="carousel-item active"style="background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../test3/test3/assets/img/content/carousel/slide_01.jpg);height:80vh">
                   <div class="row col-md-5 slide_caption">
                     <div class="row slide_01 slideanim">
-                      <h5 class="slideanim ">God's eye</h5>
-                      <p class="slideanim ">Class aptent taciti sociosqu ad litora torquent per conubia,
+                      <h5 class="slideanim  wow bounceInDown">God's eye</h5>
+                      <p class="slideanim  wow bounceInDown">Class aptent taciti sociosqu ad litora torquent per conubia,
                            per inceptos himenaeos. 
                           Quisque gravida eu lacus et consequat. 
                           Interdum et malesuada</p>
-                      <div class="Buy slideanim " style="margin-top:20px">
-                          <a href="#" style="background-color: rgba(0, 0, 0, 0.5) !important; padding:20px;text-decoration: none;">349$ <p style="color:yellow">249$</p> </a> 
-                          <a href="#"style="background-color: #ffff; padding:20px 30px">BUY</a>  
+                      <div class="Buy slideanim wow bounceInLeft" style="margin-top:20px">
+                          <a href="#" style="background-color: rgba(0, 0, 0, 0.5) !important; padding:15px;text-decoration: none;">349$ <p style="color:yellow">249$</p> </a> 
+                          <a href="#"style="background-color: #ffff; padding:15px 30px">BUY</a>  
                       </div>
                     </div>                
                   </div>
@@ -143,14 +207,14 @@
                 <div class="carousel-item "style="background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../test3/test3/assets/img/content/carousel/slide_02.jpg);height:80vh">
                   <div class="row col-md-5  slide_caption">
                     <div class="row slide_01">
-                      <h5 class="slideanim ">Cybercity 2056</h5>
-                      <p  class="slideanim ">Class aptent taciti sociosqu ad litora torquent
+                      <h5 class="slideanim  wow bounceInDown ">Cybercity 2056</h5>
+                      <p  class="slideanim  wow bounceInDown">Class aptent taciti sociosqu ad litora torquent
                         <br>per conubia, per inceptos himenaeos. <br>
                           Quisque gravida eu lacus et consequat. 
                           Interdum et malesuada.</p>
-                      <div class="Buy slideanim " style="margin-top:20px">
-                        <a href="#" style="background-color: rgba(0, 0, 0, 0.5) !important; padding:20px;text-decoration: none;">349$ <p style="color:yellow">249$</p> </a> 
-                        <a href="#"style="background-color: #ffff; padding:20px 30px">BUY</a>  
+                      <div class="Buy slideanim wow bounceInLeft" style="margin-top:20px">
+                        <a href="#" style="background-color: rgba(0, 0, 0, 0.5) !important; padding:15px;text-decoration: none;">349$ <p style="color:yellow">249$</p> </a> 
+                        <a href="#"style="background-color: #ffff; padding:15px 30px">BUY</a>  
                       </div>
                     </div>
                    
@@ -159,14 +223,14 @@
                 <div class="carousel-item "style="background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../test3/test3/assets/img/content/carousel/slide_03.jpg);height:80vh">
                   <div class="row col-md-5 slide_caption" style="display: block;">
                     <div class="row slide_01 "style="display: block;">
-                      <h5 class="slideanim ">The darkness within me</h5>
-                      <p class="slideanim "><br>Class aptent taciti sociosqu ad litora torquent <br> per conubia,
+                      <h5 class="slideanim  wow bounceInDown">The darkness within me</h5>
+                      <p class="slideanim  wow bounceInDown"><br>Class aptent taciti sociosqu ad litora torquent <br> per conubia,
                         per inceptos himenaeos.
                          <br>Quisque gravida eu lacus et consequat.
                         <br>Interdum et malesuada</p>
-                      <div class="Buy slideanim " style="margin-top:20px">
-                        <a href="#" style="background-color: rgba(0, 0, 0, 0.5) !important; padding:20px;text-decoration: none;">349$ <p style="color:yellow">249$</p> </a> 
-                          <a href="#"style="background-color: #ffff; padding:20px 30px">BUY</a>  
+                      <div class="Buy slideanim wow bounceInLeft" style="margin-top:20px">
+                        <a href="#" style="background-color: rgba(0, 0, 0, 0.5) !important; padding:15px;text-decoration: none;">349$ <p style="color:yellow">249$</p> </a> 
+                          <a href="#"style="background-color: #ffff; padding:15px 30px">BUY</a>  
                       </div>
                     </div>
                     
@@ -658,20 +722,7 @@
       </div>
       <div class="row" style="width:100%; height:60px"></div>
     </div> 
-    <script>
-      jQuery(function($) {
-   $(window).scroll(function () {
-       $(".slideanim-bottom").each(function () {
-           var pos = $(this).offset().top;
-
-           var winTop = $(window).scrollTop();
-           if (pos < winTop + 600) {
-               $(this).addClass("slide");
-           }
-       });
-   });
-});
-</script>
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
@@ -680,6 +731,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../slick/slick.min.js"></script>
-    <script src="../js/singup.js"></script>
+   <script src="../WOW-master/wow.min.js"></script>
+    <script src="../js/singupabout.js"></script>
   </body>
 </html>
