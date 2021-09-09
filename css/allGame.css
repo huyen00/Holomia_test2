@@ -114,7 +114,19 @@ h1::after{
 .nav-item:hover .dropdown-menu{
     display:block;
 }
-
+.list-menu{
+    display:flex;
+  }
+  .menuuu{
+    display:block;
+    /* padding-inline-start: 0; */
+  }
+  .tabmenu-item{
+    display:block;
+    padding-left:0;
+    margin-left:0;
+    margin-top:1em;
+  }
 /* cart */
 .form-cart{
     width:400px;
@@ -175,6 +187,22 @@ h1::after{
     cursor: pointer;
 } 
 /*--------------main-----------------*/
+/*tab1*/
+.tab-item-content{
+    width:66%;
+}
+.tab-item-pice{
+    width:33%;
+}
+.tab1-img{
+    width:33%
+}
+.tab1-title{
+    width:66%;
+}
+.td-lt{
+    text-decoration: line-through;
+}
 .img-fluid{
     position: relative !important;
     background-position: center !important;
@@ -186,6 +214,12 @@ h1::after{
     color: #fff;
     background-color: #0F131E !important;
     border-bottom: 1px solid #fff;
+}
+.left{
+    width:66%;
+}
+.right{
+    width:33%;
 }
 .nav-pills .nav-link {
     border-radius: 0;
@@ -313,5 +347,90 @@ li{
         flex: 0 0 49%;
         max-width: 49%;
         padding-left:20px;
+    }
+}
+/*mobile*/
+@media only screen and (max-width:739px){
+    .list-menu{
+        display:block;
+        padding-inline-start: 0;
+    }
+    .tab1-img{
+        display:none;
+    }
+    .sale a{
+        display:none;
+    }
+    .tab1-title a{
+        font-size:0.9rem;
+    }
+    .tab1-title{
+        position: relative;
+        width: 120%;
+        padding-left: 0px;
+       
+    }
+    .tab-item{
+        width:100%;
+    }
+    .container{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tab1-img{
+        width:33%
+    }
+    .tab-item-content{
+        width:66%;
+    }
+    .tab-item-pice{
+        width:33%;
+        margin-left:80px;
+    }
+    h2{
+        padding-left:0.7rem;
+    }
+    .your-class{
+        padding-left:0.8rem;
+        padding-right:0.7rem;
+    }
+    .left{
+        width:98%
+    }
+    .right{
+        width:98%;
+        padding-bottom: 2rem;
+    }
+}
+/*-----tablet------*/
+@media only screen and (max-width:1023px) and (min-width:740px){
+    .search-item{
+        display:none;
+    }
+    .left{
+        width:98%
+    }
+    .right{
+        width:98%;
+        padding-bottom: 2rem;
+        margin-left:1rem;
+    }
+    .tab-item{
+        margin-bottom:1.2rem;
+    }
+    .your-class{
+        width:97%;
+    }
+}
+/*---PC ------*/
+@media only screen and (min-width:1024px){
+    .container{
+        padding-left:0px;
+    }
+    .right{
+        padding-left:1rem;
+    }
+    .tab-item{
+        margin-bottom:1.2rem;
     }
 }

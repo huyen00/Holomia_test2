@@ -6,10 +6,14 @@ h1{
     text-align: center;
     margin-top: 100px;
 }
-.container{
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+/* .container{
     padding-right:0;
     padding-left:0;
-}
+} */
 
 h1::after{
     display:block;
@@ -131,12 +135,23 @@ h1::after{
     border-radius: 3px;
     padding:15px;
 }
-@media screen and (max-width:993px) {
+/* @media screen and (max-width:993px) {
     .item{
         width:49%;
         padding: 1em 2em;
     }
 
+} */
+/* mobile  */
+@media only screen and (max-width:46.1875em){
+    .item{
+        width:98%;
+        padding:0.5em 0.5em;
+    }
+    .logo_game{
+       margin-top:90%;
+    }
+   
 }
 .main3 h3::after{
     display:block;
@@ -201,21 +216,45 @@ h1::after{
 .over-item .avat{
     margin-top: 40px;
 }
-@media screen and (max-width:993px) {
-    .over-item{
-        width:30%;
-        padding: 1em 2em;
-        font-size:70%;
-    }
 
-}
-@media screen and (max-width:826px) {
-    .over-item{
-        width:49%;
-        padding: 1em 2em;
-        font-size:70%;
+/*mobile*/
+@media only screen and (max-width:46.1875em) {
+    .icon-downn{
+        margin-top:55%;
     }
-
+    .over-item{
+        width:97%;
+        padding: 1em 2em;
+        /* font-size:70%; */
+    }
+    .form_contact{
+        width:98%;
+    }
+    .map{
+        margin-top:10%;
+        width:98%;
+        
+    }
+    .img-fluidd{
+        width:90%;
+    }
+    .list-left{
+        width:97%;
+        margin-top:0px;
+        margin-bottom: 0px;
+    }
+    .list-right{
+        width:97%;
+        margin-top:0px !important;
+        margin-bottom: 30px;
+        padding-left:20px;
+    }
+    .list-left ul li a{
+        font-size: 70%;
+        padding-left:1em;
+       
+    }
+    
 }
 /*----main5-----*/
 .main5{
@@ -269,22 +308,16 @@ h1::after{
 .map{
     background: linear-gradient(to bottom, rgba(17, 25, 49, 0.8) 30%, rgba(15, 19, 30, 0.8) 50%);
 }
-@media screen and (max-width:1130px){
-    .map{
-        margin-top:20px;
-      
-    }
-   
+.list-left{
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
-@media screen and (max-width:990px){
-    .form_contact{
-        width:98%;
-    }
-    .map{
-        margin-top:20px;
-      
-    }
-   
+.list-left a{
+    text-decoration: none;
+}
+.list-right{
+    margin-top:80px;
+    float:right;
 }
 .fa-facebook{
     color:#ffff;
@@ -300,7 +333,7 @@ h1::after{
 }
 .main7{
     width: 100%;
-    height:30vh;
+   
 }
 .main7 li {
     float: left;
@@ -325,5 +358,64 @@ h1::after{
 .lít .item{
     color:#fff;
 }
-/*----------ABOUT US-----------*/
+/*----------tablet-----------*/
+@media only screen and (max-width:63.9375em) and (min-width:46.25em){
+    .icon-downn{
+        margin-top:60%;
+    }
+    .over-item{
+        width:30%;
+        padding: 1em 2em;
+        font-size:70%;
+    }
+    .logo_game{
+        margin-top:60%;
+    }
+    .over-item img {
+       
+        margin-left: 0%;
+    }
+    .item{
+        width:49%;
+        padding: 1em 2em;
+    }
+    .form_contact{
+        width:98%;
+    }
+    .map{
+        margin-top:10%;
+        width:98%;
+        
+    }
+    .img-fluidd{
+        width:90%;
+    }
+}
+/*----------PC-----------*/
+@media only screen and (min-width:64em){
+    .icon-downn{
+        margin-top:10%;
+    }
+   
+    .item{
+        width:25%;
+        padding: 2em 0.8em;
+    }
+    .over-item{
+        width:30%;
+        padding: 1em 2em;
+        font-size:70%;
+    }
+    .form_contact{
+        width:32%;
+    }
+    .map{
+        width:66%;
+        
+    }
+    .img-fluidd{
+        width:90%;
+    }
+}
+
 

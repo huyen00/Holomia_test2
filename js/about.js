@@ -1,3 +1,11 @@
+//xu ly menu
+$(document).ready(function(){
+  $('#tabmenu').click(function(even){
+    $('.list-menu').addClass('menuuu');
+    $('.nav-item').addClass('tabmenu-item');
+    
+  })
+})
 //xu ly an hien gio hang
 $(document).ready(function(){
     $('.giohang').click(function(event){

@@ -30,10 +30,10 @@ h1::after{
     display: inline;
 }
 .list-menu {
-    display: inline;
+    display: flex;
 }
 .nav-link{
-    display: inline;
+    /* display: inline; */
     color:#fff;
     font-size: 14px;
 }
@@ -330,4 +330,41 @@ li{
         max-width: 49%;
         padding-left:20px;
     }
+}
+
+/*mobile------*/
+@media only screen and (max-width:739px){
+    .list-menu{
+        display:block;
+        padding-inline-start: 0;
+    }
+}
+/*tablet*/
+@media only screen and (max-width:1023px) and (main-width:740px){
+    
+      .left{
+          width:98%;
+      }
+    .right{
+        width:98%;
+    }
+    
+}
+.search-item{
+    display : none;
+}
+.sing-in{
+    margin-top:1.3rem !important;
+}
+/*------pc ------*/
+@media only screen and (min-width:1024px){
+    .left{
+        width:66%;
+    }
+  .right{
+      width:33%;
+  }
+  .search-item{
+      display: block;
+  }
 }

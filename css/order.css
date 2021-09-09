@@ -234,3 +234,46 @@ li{
         padding-left:20px;
     }
 }
+/*mobile*/
+@media only screen and (max-width:739px){
+    .list-menu{
+        display:block;
+        padding-inline-start: 0;
+    }
+    .nav-item{
+        display: block;
+        margin-top:1rem;
+    }
+    .content-left{
+        width:98%;
+    }
+    .content-right{
+        width:98%;
+    }
+   
+}
+/*-----tablet------*/
+@media only screen and (max-width:1023px) and (min-width:740px){
+    .navbar-nav.search-item{
+        display:none;
+    }
+    .content-left{
+        width:98%;
+    }
+    .content-right{
+        width:98%;
+    }
+}
+/*---PC ------*/
+@media only screen and (min-width:1024px){
+    .content-left{
+        width:66%;
+    }
+    .content-right{
+        width:33%;
+        padding-left:1rem;
+    }
+    
+}
+
+

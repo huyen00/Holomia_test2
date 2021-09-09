@@ -575,3 +575,40 @@ li{
         padding-left:20px;
     }
 }
+
+/*mobile*/
+@media only screen and (max-width:739px){
+    .list-menu{
+        display:block;
+        padding-inline-start: 0;
+    }
+    .item1{
+        display: none;
+    }
+    .review-left{
+        padding-left:1.2rem;
+    }
+    .sing-in{
+        display: block;
+    }
+    
+}
+/*-----tablet------*/
+@media only screen and (max-width:1023px) and (min-width:740px){
+    .navbar-nav.search-item{
+        display:none;
+    }
+    .btn-add-to-cart a{
+        width:100%;
+    }
+    
+}
+/*---PC ------*/
+@media only screen and (min-width:1024px){
+    .btn-add-to-cart{
+        margin-left:2rem;
+    }
+    .btn-add-to-cart a{
+        width:70%;
+    }
+}

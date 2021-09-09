@@ -1,3 +1,12 @@
+//xu ly menu
+$(document).ready(function(){
+  $('#tabmenu').click(function(even){
+    $('.list-menu').addClass('menuuu');
+    $('.nav-item').addClass('tabmenu-item');
+    
+  })
+})
+
 $(document).ready(function(){
     $('.your-class').slick({
         autoplay:true

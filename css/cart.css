@@ -29,10 +29,10 @@ h1::after{
     display: inline;
 }
 .list-menu {
-    display: flex !important;
+    display: flex ;
 }
 .nav-link{
-    display: inline;
+    /* display: inline; */
     color:#fff;
     font-size: 14px;
 }
@@ -179,6 +179,18 @@ h1::after{
 }                        
                            */
 /*-------------------cart----------------*/
+.cart-left{
+    width:49%;
+}
+.cart-right{
+    width:49%;
+}
+.cart-img{
+    width:33%;
+}
+/* .cart-title{
+    width:66%;
+} */
 .cart1::after {
     font-family: 'themify';
     top: -2rem;
@@ -282,3 +294,63 @@ li{
         padding-left:20px;
     }
 }
+/*mobile*/
+@media only screen and (max-width:739px){
+    .list-menu{
+        display:block;
+        padding-inline-start: 0;
+    }
+    .nav-item{
+        display: block;
+    }
+    .sing-in{
+        display: block;
+    }
+    .cart-img{
+        display: none;
+    }
+    .sale{
+        display: none;
+    }
+    .pice{
+        display: none !important;
+    }
+    .cart-title{
+        padding-left:0;
+    }
+}
+/*-----tablet------*/
+@media only screen and (max-width:1023px) and (min-width:740px){
+    .navbar-nav.search-item{
+        display:none;
+    }
+    .profile-avata{
+        margin-top:1rem;
+    }
+    .float-left{
+        width:47%;
+    }
+    .float-right{
+        width:52%;
+    }
+    .btn-giam,.btn-tang{
+        width:2rem;
+    }
+    
+}
+/*---PC ------*/
+@media only screen and (min-width:1024px){
+    .profile-avata{
+        margin-top:1rem;
+    }
+    .float-left{
+        width:47%;
+    }
+    .float-right{
+        width:52%;
+    }
+    .btn-giam,.btn-tang{
+        width:2rem;
+    }
+}
+

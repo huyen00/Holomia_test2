@@ -238,3 +238,55 @@ li{
         padding-left:20px;
     }
 }
+/*mobile*/
+@media only screen and (max-width:739px){
+    .list-menu{
+        display:block;
+        padding-inline-start: 0;
+    }
+    .nav-item{
+        display: block;
+        /* margin-top:1rem; */
+    }
+    .contact-left{
+        width:98%;
+    }
+    .contact-right{
+        width:98%;
+        margin-top:1rem;
+    }
+    
+   
+}
+/*-----tablet------*/
+@media only screen and (max-width:1023px) and (min-width:740px){
+    .navbar-nav.search-item{
+        display:none;
+    }
+    .list-menu{
+        display: flex;
+    }
+    .contact-left{
+        width:98%;
+    }
+    .contact-right{
+        width:98%;
+        margin-top:1rem;
+    }
+}
+/*---PC ------*/
+@media only screen and (min-width:1024px){
+    .contact-left{
+        width:57%;
+        padding-right:1rem;
+    }
+    .contact-right{
+        width:42%;
+    }
+    .list-menu{
+        display: flex;
+    }
+    
+}
+
+
